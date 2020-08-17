@@ -1,0 +1,1219 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <meta charset="utf-8">
+    <!-- <base href="/"> -->
+
+    <title>Title</title>
+    <meta name="description" content="">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Template Basic Images Start -->
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="icon" href="images/favicon/favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/favicon.png">
+    <!-- Template Basic Images End -->
+
+    <!-- Custom Browsers Color Start -->
+    <meta name="theme-color" content="#000">
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebSite">
+
+<header>
+    <div class="container column">
+        <div class="head__top flex flex__between">
+            <div class="head__logo" itemscope itemtype="http://schema.org/Organization">
+                <a itemprop="url" href="/">
+                    <img itemprop="logo" src="/images/logo.png" alt="logo">
+                </a>
+                <meta itemprop="name" content="NAME">
+                <meta itemprop="address" content="ADDRESS">
+                <meta itemprop="telephone" content="TELEPHONE">
+            </div>
+            <span class="head__desc">Бесплатно смотреть клипы по всем жанрам и исполнителям</span>
+            <div class="spacer"></div>
+            <form action="/" class="head__search flex" itemprop="potentialAction" itemscope="" itemtype="https://schema.org/SearchAction">
+                <meta itemprop="target" content="/search/{query}">
+                <link itemprop="url" href="http://www.example.com/"/>
+                <div class="input__search">
+                    <input type="text" placeholder="Найти клипы" itemprop="query">
+                </div>
+                <div class="select__wrap select__search">
+                    <div class="select__tab">
+                        <span>По исполнителю</span>
+                    </div>
+                    <ul class="one__option select__hide">
+                        <li class="is-active" data-val="author">По исполнителю</li>
+                        <li data-val="name">По названию</li>
+                        <li data-val="date">По дате</li>
+                    </ul>
+                    <input name="cat" type="hidden" value="">
+                </div>
+                <input type="submit" value="Искать!" class="submit__search">
+            </form>
+            <div class="my__hamburger">
+                <div class="hamburger__block">
+                    <div class="hamburger__top"></div>
+                    <div class="hamburger__bottom"></div>
+                </div>
+            </div>
+        </div>
+        <nav class="head__nav flex" itemscope="" itemtype="http://schema.org/SiteNavigationElement">
+            <ul class="flex__between flex__wrap" itemprop="about" itemscope="" itemtype="http://schema.org/ItemList">
+                <li class="i i__home" itemprop="itemListElement">
+                    <a href="#" itemprop="url">Главная</a>
+                    <meta itemprop="name" content="Главная" />
+                </li>
+                <li class="i i__fire" itemprop="itemListElement">
+                    <a href="#" itemprop="url">Популярные клипы</a>
+                    <meta itemprop="name" content="Популярные клипы" />
+                </li>
+                <li class="i i__bold" itemprop="itemListElement">
+                    <a href="#" itemprop="url">Новые клипы</a>
+                    <meta itemprop="name" content="Новые клипы" />
+                </li>
+                <li class="menu-item-has-children" itemprop="itemListElement">
+                    <a href="#" itemprop="url">Жанры</a>
+                    <meta itemprop="name" content="Жанры" />
+
+                    <ul class="sub-menu" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ItemList">
+                        <li itemprop="itemListElement">
+                            <a href="#" itemprop="url">R`N`B</a>
+                            <meta itemprop="name" content="R`N`B" />
+                        </li>
+                        <li itemprop="itemListElement">
+                            <a href="#" itemprop="url">Pop</a>
+                            <meta itemprop="name" content="Pop" />
+                        </li>
+                        <li itemprop="itemListElement">
+                            <a href="#" itemprop="url">Rock</a>
+                            <meta itemprop="name" content="Rock" />
+                        </li>
+                        <li itemprop="itemListElement">
+                            <a href="#" itemprop="url">Electronic</a>
+                            <meta itemprop="name" content="Electronic" />
+                        </li>
+                        <li itemprop="itemListElement">
+                            <a href="#" itemprop="url">Hip-hop & Rap</a>
+                            <meta itemprop="name" content="Hip-hop & Rap" />
+                        </li>
+                    </ul>
+                </li>
+                <li itemprop="itemListElement">
+                    <a href="#" itemprop="url">Исполнители</a>
+                    <meta itemprop="name" content="Исполнители" />
+                </li>
+                <li itemprop="itemListElement">
+                    <a href="#" itemprop="url">Страны</a>
+                    <meta itemprop="name" content="Страны" />
+                </li>
+                <li itemprop="itemListElement">
+                    <a href="#" itemprop="url">Американские клипы</a>
+                    <meta itemprop="name" content="Американские клипы" />
+                </li>
+                <li itemprop="itemListElement">
+                    <a href="#" itemprop="url">Русские клипы</a>
+                    <meta itemprop="name" content="Русские клипы" />
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+
+    <div class="breadcrumb__wrap">
+        <div class="container">
+            <ul class="breadcrumb__list flex__start" itemscope="" itemtype="https://schema.org/BreadcrumbList">
+                <li class="breadcrumb__item" itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+                    <a href="#" itemprop="item">
+                        <span itemprop="name">Главная</span>
+                    </a>
+                    <meta itemprop="position" content="1">
+                </li>
+                <li class="breadcrumb__item" itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+                    <a href="#" itemprop="item">
+                        <span itemprop="name">Исполнители</span>
+                    </a>
+                    <meta itemprop="position" content="2">
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="double__row">
+        <div class="container flex flex__start">
+
+            <div class="main__wrap column">
+                <div class="figure__row">
+
+                    <div class="figure__top flex__start">
+                        <h1 class="h2 after__top">Поиск исполнителей</h1>
+                    </div>
+
+                    <div class="filter__wrap column">
+                        <form id="filter__form" class="filter__top flex__start flex__wrap">
+                            <span>Сортировать:</span>
+                            <div class="filter__item">
+                                <div class="filter__btn" data-type="popular" data-index="asc" data-name="По популярности">
+                                    По популярности
+                                    <input type="hidden" name="popular" value="">
+                                </div>
+                            </div>
+                            <div class="filter__item">
+                                <div class="select__group select__wrap gray filter__select" data-type="genres">
+                                    <div class="select__tab">По жанру</div>
+                                    <ul class="multi__option select__hide">
+                                        <li class="option">
+                                            <div class="checkbox__wrap flex__start">
+                                                <div class="checkbox">
+                                                    <input type="checkbox" name="genres[]" value="R`N`B" data-name="R`N`B">
+                                                    <span class="checkmark"></span>
+                                                </div><span>R`N`B</span>
+                                            </div>
+                                        </li>
+                                        <li class="option">
+                                            <div class="checkbox__wrap flex__start">
+                                                <div class="checkbox">
+                                                    <input type="checkbox" name="genres[]" value="Techo" data-name="Techo">
+                                                    <span class="checkmark"></span>
+                                                </div><span>Techo</span>
+                                            </div>
+                                        </li>
+                                        <li class="option">
+                                            <div class="checkbox__wrap flex__start">
+                                                <div class="checkbox">
+                                                    <input type="checkbox" name="genres[]" value="Pop" data-name="Pop">
+                                                    <span class="checkmark"></span>
+                                                </div><span>Pop</span>
+                                            </div>
+                                        </li>
+                                        <li class="option">
+                                            <div class="checkbox__wrap flex__start">
+                                                <div class="checkbox">
+                                                    <input type="checkbox" name="genres[]" value="Какой-то длинный жанр" data-name="Какой-то длинный жанр">
+                                                    <span class="checkmark"></span>
+                                                </div><span>Какой-то длинный жанр</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="filter__item">
+                                <div class="select__group select__wrap gray filter__select" data-type="year">
+                                    <div class="select__tab">По году</div>
+                                    <ul class="multi__option select__hide">
+                                        <li class="option">
+                                            <div class="checkbox__wrap flex__start">
+                                                <div class="checkbox">
+                                                    <input type="checkbox" name="year[]" value="2020" data-name="2020">
+                                                    <span class="checkmark"></span>
+                                                </div><span>2020</span>
+                                            </div>
+                                        </li>
+                                        <li class="option">
+                                            <div class="checkbox__wrap flex__start">
+                                                <div class="checkbox">
+                                                    <input type="checkbox" name="year[]" value="2019" data-name="2019">
+                                                    <span class="checkmark"></span>
+                                                </div><span>2019</span>
+                                            </div>
+                                        </li>
+                                        <li class="option">
+                                            <div class="checkbox__wrap flex__start">
+                                                <div class="checkbox">
+                                                    <input type="checkbox" name="year[]" value="2018" data-name="2018">
+                                                    <span class="checkmark"></span>
+                                                </div><span>2018</span>
+                                            </div>
+                                        </li>
+                                        <li class="option">
+                                            <div class="checkbox__wrap flex__start">
+                                                <div class="checkbox">
+                                                    <input type="checkbox" name="year[]" value="2017" data-name="2017">
+                                                    <span class="checkmark"></span>
+                                                </div><span>2017</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="filter__item">
+                                <div class="select__group select__wrap gray filter__select" data-type="coutry">
+                                    <div class="select__tab">По стране</div>
+                                    <ul class="multi__option select__hide">
+                                        <li class="option">
+                                            <div class="checkbox__wrap flex__start">
+                                                <div class="checkbox">
+                                                    <input type="checkbox" name="contry[]" value="США" data-name="США">
+                                                    <span class="checkmark"></span>
+                                                </div><span>США</span>
+                                            </div>
+                                        </li>
+                                        <li class="option">
+                                            <div class="checkbox__wrap flex__start">
+                                                <div class="checkbox">
+                                                    <input type="checkbox" name="contry[]" value="Испания" data-name="Испания">
+                                                    <span class="checkmark"></span>
+                                                </div><span>Испания</span>
+                                            </div>
+                                        </li>
+                                        <li class="option">
+                                            <div class="checkbox__wrap flex__start">
+                                                <div class="checkbox">
+                                                    <input type="checkbox" name="contry[]" value="Великобритания" data-name="Великобритания">
+                                                    <span class="checkmark"></span>
+                                                </div><span>Великобритания</span>
+                                            </div>
+                                        </li>
+                                        <li class="option">
+                                            <div class="checkbox__wrap flex__start">
+                                                <div class="checkbox">
+                                                    <input type="checkbox" name="contry[]" value="Россия" data-name="Россия">
+                                                    <span class="checkmark"></span>
+                                                </div><span>Россия</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="filter__item">
+                                <div class="select__group select__wrap gray filter__select" data-type="alhabet">
+                                    <div class="select__tab">По алфавиту</div>
+                                    <div class="alphabet__option select__hide">
+                                        <div class="alphabet__wrap column">
+                                            <span class="title">Английский</span>
+                                            <ul class="flex__start flex__wrap">
+                                                <li class="alphabet__checkbox">
+                                                    <input type="checkbox" name="alhabet[]" value="A" data-name="Исполнитель на 'A'">
+                                                    <span class="checkmark flex">A</span>
+                                                </li>
+                                                <li class="alphabet__checkbox">
+                                                    <input type="checkbox" name="alhabet[]" value="B" data-name="Исполнитель на 'B'">
+                                                    <span class="checkmark flex">B</span>
+                                                </li>
+                                                <li class="alphabet__checkbox">
+                                                    <input type="checkbox" name="alhabet[]" value="C" data-name="Исполнитель на 'C'">
+                                                    <span class="checkmark flex">C</span>
+                                                </li>
+                                                <li class="alphabet__checkbox">
+                                                    <input type="checkbox" name="alhabet[]" value="D" data-name="Исполнитель на 'D'">
+                                                    <span class="checkmark flex">D</span>
+                                                </li>
+                                                <li class="alphabet__checkbox">
+                                                    <input type="checkbox" name="alhabet[]" value="E" data-name="Исполнитель на 'E'">
+                                                    <span class="checkmark flex">E</span>
+                                                </li>
+                                                <li class="alphabet__checkbox">
+                                                    <input type="checkbox" name="alhabet[]" value="F" data-name="Исполнитель на 'F'">
+                                                    <span class="checkmark flex">F</span>
+                                                </li>
+                                                <li class="alphabet__checkbox">
+                                                    <input type="checkbox" name="alhabet[]" value="G" data-name="Исполнитель на 'G'">
+                                                    <span class="checkmark flex">G</span>
+                                                </li>
+                                                <li class="alphabet__checkbox">
+                                                    <input type="checkbox" name="alhabet[]" value="H" data-name="Исполнитель на 'H'">
+                                                    <span class="checkmark flex">H</span>
+                                                </li>
+                                                <li class="alphabet__checkbox">
+                                                    <input type="checkbox" name="alhabet[]" value="I" data-name="Исполнитель на 'I'">
+                                                    <span class="checkmark flex">I</span>
+                                                </li>
+                                                <li class="alphabet__checkbox">
+                                                    <input type="checkbox" name="alhabet[]" value="J" data-name="Исполнитель на 'J'">
+                                                    <span class="checkmark flex">J</span>
+                                                </li>
+                                                <li class="alphabet__checkbox">
+                                                    <input type="checkbox" name="alhabet[]" value="K" data-name="Исполнитель на 'K'">
+                                                    <span class="checkmark flex">K</span>
+                                                </li>
+                                                <li class="alphabet__checkbox">
+                                                    <input type="checkbox" name="alhabet[]" value="L" data-name="Исполнитель на 'L'">
+                                                    <span class="checkmark flex">L</span>
+                                                </li>
+                                                <li class="alphabet__checkbox">
+                                                    <input type="checkbox" name="alhabet[]" value="M" data-name="Исполнитель на 'M'">
+                                                    <span class="checkmark flex">M</span>
+                                                </li>
+                                                <li class="alphabet__checkbox">
+                                                    <input type="checkbox" name="alhabet[]" value="N" data-name="Исполнитель на 'N'">
+                                                    <span class="checkmark flex">N</span>
+                                                </li>
+                                                <li class="alphabet__checkbox">
+                                                    <input type="checkbox" name="alhabet[]" value="O" data-name="Исполнитель на 'O'">
+                                                    <span class="checkmark flex">O</span>
+                                                </li>
+                                                <li class="alphabet__checkbox">
+                                                    <input type="checkbox" name="alhabet[]" value="P" data-name="Исполнитель на 'P'">
+                                                    <span class="checkmark flex">P</span>
+                                                </li>
+                                                <li class="alphabet__checkbox">
+                                                    <input type="checkbox" name="alhabet[]" value="Q" data-name="Исполнитель на 'Q'">
+                                                    <span class="checkmark flex">Q</span>
+                                                </li>
+                                                <li class="alphabet__checkbox">
+                                                    <input type="checkbox" name="alhabet[]" value="R" data-name="Исполнитель на 'R'">
+                                                    <span class="checkmark flex">R</span>
+                                                </li>
+                                                <li class="alphabet__checkbox">
+                                                    <input type="checkbox" name="alhabet[]" value="S" data-name="Исполнитель на 'S'">
+                                                    <span class="checkmark flex">S</span>
+                                                </li>
+                                                <li class="alphabet__checkbox">
+                                                    <input type="checkbox" name="alhabet[]" value="T" data-name="Исполнитель на 'T'">
+                                                    <span class="checkmark flex">T</span>
+                                                </li>
+                                                <li class="alphabet__checkbox">
+                                                    <input type="checkbox" name="alhabet[]" value="U" data-name="Исполнитель на 'U'">
+                                                    <span class="checkmark flex">U</span>
+                                                </li>
+                                                <li class="alphabet__checkbox">
+                                                    <input type="checkbox" name="alhabet[]" value="V" data-name="Исполнитель на 'V'">
+                                                    <span class="checkmark flex">V</span>
+                                                </li>
+                                                <li class="alphabet__checkbox">
+                                                    <input type="checkbox" name="alhabet[]" value="W" data-name="Исполнитель на 'W'">
+                                                    <span class="checkmark flex">W</span>
+                                                </li>
+                                                <li class="alphabet__checkbox">
+                                                    <input type="checkbox" name="alhabet[]" value="X" data-name="Исполнитель на 'X'">
+                                                    <span class="checkmark flex">X</span>
+                                                </li>
+                                                <li class="alphabet__checkbox">
+                                                    <input type="checkbox" name="alhabet[]" value="Y" data-name="Исполнитель на 'Y'">
+                                                    <span class="checkmark flex">Y</span>
+                                                </li>
+                                                <li class="alphabet__checkbox">
+                                                    <input type="checkbox" name="alhabet[]" value="Z" data-name="Исполнитель на 'Z'">
+                                                    <span class="checkmark flex">Z</span>
+                                                </li>
+                                            </ul>
+                                            <span class="title">Цифры</span>
+                                            <ul class="flex__start flex__wrap">
+                                                <li class="alphabet__checkbox">
+                                                    <input type="checkbox" name="alhabet[]" value="0" data-name="Исполнитель на '0'">
+                                                    <span class="checkmark flex">0</span>
+                                                </li>
+                                                <li class="alphabet__checkbox">
+                                                    <input type="checkbox" name="alhabet[]" value="1" data-name="Исполнитель на '1'">
+                                                    <span class="checkmark flex">1</span>
+                                                </li>
+                                                <li class="alphabet__checkbox">
+                                                    <input type="checkbox" name="alhabet[]" value="2" data-name="Исполнитель на '2'">
+                                                    <span class="checkmark flex">2</span>
+                                                </li>
+                                                <li class="alphabet__checkbox">
+                                                    <input type="checkbox" name="alhabet[]" value="3" data-name="Исполнитель на '3'">
+                                                    <span class="checkmark flex">3</span>
+                                                </li>
+                                                <li class="alphabet__checkbox">
+                                                    <input type="checkbox" name="alhabet[]" value="4" data-name="Исполнитель на '4'">
+                                                    <span class="checkmark flex">4</span>
+                                                </li>
+                                                <li class="alphabet__checkbox">
+                                                    <input type="checkbox" name="alhabet[]" value="5" data-name="Исполнитель на '5'">
+                                                    <span class="checkmark flex">5</span>
+                                                </li>
+                                                <li class="alphabet__checkbox">
+                                                    <input type="checkbox" name="alhabet[]" value="6" data-name="Исполнитель на '6'">
+                                                    <span class="checkmark flex">6</span>
+                                                </li>
+                                                <li class="alphabet__checkbox">
+                                                    <input type="checkbox" name="alhabet[]" value="7" data-name="Исполнитель на '7'">
+                                                    <span class="checkmark flex">7</span>
+                                                </li>
+                                                <li class="alphabet__checkbox">
+                                                    <input type="checkbox" name="alhabet[]" value="8" data-name="Исполнитель на '8'">
+                                                    <span class="checkmark flex">8</span>
+                                                </li>
+                                                <li class="alphabet__checkbox">
+                                                    <input type="checkbox" name="alhabet[]" value="9" data-name="Исполнитель на '9'">
+                                                    <span class="checkmark flex">9</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filter__item">
+                                <div class="filter__submit is-disable flex">
+                                    <span>Фильтровать</span>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="filter__bottom flex__start">
+                            <div class="filter__result__count flex__start">
+                                Найдено: <span>268</span>
+                            </div>
+                            <div class="filter__result flex__start flex__wrap"></div>
+                        </div>
+                    </div>
+
+                    <div class="column ajax__container">
+                        <div class="figure__wrap flex__between flex__wrap">
+
+                            <div class="figure figure__item__circle column" itemscope itemtype="http://schema.org/ImageObject">
+                                <a href="#" rel="nofollow" class="figure__img">
+                                    <img src="./images/logo.png" data-src="./images/actor_img.png" width="115" height="115" alt="">
+                                    <meta itemprop="image" content="./images/actor_img.png">
+                                    <meta itemprop="width" content="115">
+                                    <meta itemprop="height" content="115">
+                                </a>
+                                <div class="figure__desc column">
+                                    <div class="figure__title">
+                                        <a href="#">Tyga</a>
+                                        <meta itemprop="name" content="Tyga">
+                                    </div>
+                                    <span class="figure__text">Hip-hop, Rap</span>
+                                </div>
+                            </div>
+                            <div class="figure figure__item__circle column" itemscope itemtype="http://schema.org/ImageObject">
+                                <a href="#" rel="nofollow" class="figure__img">
+                                    <img src="./images/logo.png" data-src="./images/actor_img.png" width="115" height="115" alt="">
+                                    <meta itemprop="image" content="./images/actor_img.png">
+                                    <meta itemprop="width" content="115">
+                                    <meta itemprop="height" content="115">
+                                </a>
+                                <div class="figure__desc column">
+                                    <div class="figure__title">
+                                        <a href="#">Tyga</a>
+                                        <meta itemprop="name" content="Tyga">
+                                    </div>
+                                    <span class="figure__text">Hip-hop, Rap</span>
+                                </div>
+                            </div>
+                            <div class="figure figure__item__circle column" itemscope itemtype="http://schema.org/ImageObject">
+                                <a href="#" rel="nofollow" class="figure__img">
+                                    <img src="./images/logo.png" data-src="./images/actor_img.png" width="115" height="115" alt="">
+                                    <meta itemprop="image" content="./images/actor_img.png">
+                                    <meta itemprop="width" content="115">
+                                    <meta itemprop="height" content="115">
+                                </a>
+                                <div class="figure__desc column">
+                                    <div class="figure__title">
+                                        <a href="#">Tyga</a>
+                                        <meta itemprop="name" content="Tyga">
+                                    </div>
+                                    <span class="figure__text">Hip-hop, Rap</span>
+                                </div>
+                            </div>
+                            <div class="figure figure__item__circle column" itemscope itemtype="http://schema.org/ImageObject">
+                                <a href="#" rel="nofollow" class="figure__img">
+                                    <img src="./images/logo.png" data-src="./images/actor_img.png" width="115" height="115" alt="">
+                                    <meta itemprop="image" content="./images/actor_img.png">
+                                    <meta itemprop="width" content="115">
+                                    <meta itemprop="height" content="115">
+                                </a>
+                                <div class="figure__desc column">
+                                    <div class="figure__title">
+                                        <a href="#">Tyga</a>
+                                        <meta itemprop="name" content="Tyga">
+                                    </div>
+                                    <span class="figure__text">Hip-hop, Rap</span>
+                                </div>
+                            </div>
+                            <div class="figure figure__item__circle column" itemscope itemtype="http://schema.org/ImageObject">
+                                <a href="#" rel="nofollow" class="figure__img">
+                                    <img src="./images/logo.png" data-src="./images/actor_img.png" width="115" height="115" alt="">
+                                    <meta itemprop="image" content="./images/actor_img.png">
+                                    <meta itemprop="width" content="115">
+                                    <meta itemprop="height" content="115">
+                                </a>
+                                <div class="figure__desc column">
+                                    <div class="figure__title">
+                                        <a href="#">Tyga</a>
+                                        <meta itemprop="name" content="Tyga">
+                                    </div>
+                                    <span class="figure__text">Hip-hop, Rap</span>
+                                </div>
+                            </div>
+                            <div class="figure figure__item__circle column" itemscope itemtype="http://schema.org/ImageObject">
+                                <a href="#" rel="nofollow" class="figure__img">
+                                    <img src="./images/logo.png" data-src="./images/actor_img.png" width="115" height="115" alt="">
+                                    <meta itemprop="image" content="./images/actor_img.png">
+                                    <meta itemprop="width" content="115">
+                                    <meta itemprop="height" content="115">
+                                </a>
+                                <div class="figure__desc column">
+                                    <div class="figure__title">
+                                        <a href="#">Tyga</a>
+                                        <meta itemprop="name" content="Tyga">
+                                    </div>
+                                    <span class="figure__text">Hip-hop, Rap</span>
+                                </div>
+                            </div>
+                            <div class="figure figure__item__circle column" itemscope itemtype="http://schema.org/ImageObject">
+                                <a href="#" rel="nofollow" class="figure__img">
+                                    <img src="./images/logo.png" data-src="./images/actor_img.png" width="115" height="115" alt="">
+                                    <meta itemprop="image" content="./images/actor_img.png">
+                                    <meta itemprop="width" content="115">
+                                    <meta itemprop="height" content="115">
+                                </a>
+                                <div class="figure__desc column">
+                                    <div class="figure__title">
+                                        <a href="#">Tyga</a>
+                                        <meta itemprop="name" content="Tyga">
+                                    </div>
+                                    <span class="figure__text">Hip-hop, Rap</span>
+                                </div>
+                            </div>
+                            <div class="figure figure__item__circle column" itemscope itemtype="http://schema.org/ImageObject">
+                                <a href="#" rel="nofollow" class="figure__img">
+                                    <img src="./images/logo.png" data-src="./images/actor_img.png" width="115" height="115" alt="">
+                                    <meta itemprop="image" content="./images/actor_img.png">
+                                    <meta itemprop="width" content="115">
+                                    <meta itemprop="height" content="115">
+                                </a>
+                                <div class="figure__desc column">
+                                    <div class="figure__title">
+                                        <a href="#">Tyga</a>
+                                        <meta itemprop="name" content="Tyga">
+                                    </div>
+                                    <span class="figure__text">Hip-hop, Rap</span>
+                                </div>
+                            </div>
+                            <div class="figure figure__item__circle column" itemscope itemtype="http://schema.org/ImageObject">
+                                <a href="#" rel="nofollow" class="figure__img">
+                                    <img src="./images/logo.png" data-src="./images/actor_img.png" width="115" height="115" alt="">
+                                    <meta itemprop="image" content="./images/actor_img.png">
+                                    <meta itemprop="width" content="115">
+                                    <meta itemprop="height" content="115">
+                                </a>
+                                <div class="figure__desc column">
+                                    <div class="figure__title">
+                                        <a href="#">Tyga</a>
+                                        <meta itemprop="name" content="Tyga">
+                                    </div>
+                                    <span class="figure__text">Hip-hop, Rap</span>
+                                </div>
+                            </div>
+                            <div class="figure figure__item__circle column" itemscope itemtype="http://schema.org/ImageObject">
+                                <a href="#" rel="nofollow" class="figure__img">
+                                    <img src="./images/logo.png" data-src="./images/actor_img.png" width="115" height="115" alt="">
+                                    <meta itemprop="image" content="./images/actor_img.png">
+                                    <meta itemprop="width" content="115">
+                                    <meta itemprop="height" content="115">
+                                </a>
+                                <div class="figure__desc column">
+                                    <div class="figure__title">
+                                        <a href="#">Tyga</a>
+                                        <meta itemprop="name" content="Tyga">
+                                    </div>
+                                    <span class="figure__text">Hip-hop, Rap</span>
+                                </div>
+                            </div>
+                            <div class="figure figure__item__circle column" itemscope itemtype="http://schema.org/ImageObject">
+                                <a href="#" rel="nofollow" class="figure__img">
+                                    <img src="./images/logo.png" data-src="./images/actor_img.png" width="115" height="115" alt="">
+                                    <meta itemprop="image" content="./images/actor_img.png">
+                                    <meta itemprop="width" content="115">
+                                    <meta itemprop="height" content="115">
+                                </a>
+                                <div class="figure__desc column">
+                                    <div class="figure__title">
+                                        <a href="#">Tyga</a>
+                                        <meta itemprop="name" content="Tyga">
+                                    </div>
+                                    <span class="figure__text">Hip-hop, Rap</span>
+                                </div>
+                            </div>
+                            <div class="figure figure__item__circle column" itemscope itemtype="http://schema.org/ImageObject">
+                                <a href="#" rel="nofollow" class="figure__img">
+                                    <img src="./images/logo.png" data-src="./images/actor_img.png" width="115" height="115" alt="">
+                                    <meta itemprop="image" content="./images/actor_img.png">
+                                    <meta itemprop="width" content="115">
+                                    <meta itemprop="height" content="115">
+                                </a>
+                                <div class="figure__desc column">
+                                    <div class="figure__title">
+                                        <a href="#">Tyga</a>
+                                        <meta itemprop="name" content="Tyga">
+                                    </div>
+                                    <span class="figure__text">Hip-hop, Rap</span>
+                                </div>
+                            </div>
+                            <div class="figure figure__item__circle column" itemscope itemtype="http://schema.org/ImageObject">
+                                <a href="#" rel="nofollow" class="figure__img">
+                                    <img src="./images/logo.png" data-src="./images/actor_img.png" width="115" height="115" alt="">
+                                    <meta itemprop="image" content="./images/actor_img.png">
+                                    <meta itemprop="width" content="115">
+                                    <meta itemprop="height" content="115">
+                                </a>
+                                <div class="figure__desc column">
+                                    <div class="figure__title">
+                                        <a href="#">Tyga</a>
+                                        <meta itemprop="name" content="Tyga">
+                                    </div>
+                                    <span class="figure__text">Hip-hop, Rap</span>
+                                </div>
+                            </div>
+                            <div class="figure figure__item__circle column" itemscope itemtype="http://schema.org/ImageObject">
+                                <a href="#" rel="nofollow" class="figure__img">
+                                    <img src="./images/logo.png" data-src="./images/actor_img.png" width="115" height="115" alt="">
+                                    <meta itemprop="image" content="./images/actor_img.png">
+                                    <meta itemprop="width" content="115">
+                                    <meta itemprop="height" content="115">
+                                </a>
+                                <div class="figure__desc column">
+                                    <div class="figure__title">
+                                        <a href="#">Tyga</a>
+                                        <meta itemprop="name" content="Tyga">
+                                    </div>
+                                    <span class="figure__text">Hip-hop, Rap</span>
+                                </div>
+                            </div>
+                            <div class="figure figure__item__circle column" itemscope itemtype="http://schema.org/ImageObject">
+                                <a href="#" rel="nofollow" class="figure__img">
+                                    <img src="./images/logo.png" data-src="./images/actor_img.png" width="115" height="115" alt="">
+                                    <meta itemprop="image" content="./images/actor_img.png">
+                                    <meta itemprop="width" content="115">
+                                    <meta itemprop="height" content="115">
+                                </a>
+                                <div class="figure__desc column">
+                                    <div class="figure__title">
+                                        <a href="#">Tyga</a>
+                                        <meta itemprop="name" content="Tyga">
+                                    </div>
+                                    <span class="figure__text">Hip-hop, Rap</span>
+                                </div>
+                            </div>
+                            <div class="figure figure__item__circle column" itemscope itemtype="http://schema.org/ImageObject">
+                                <a href="#" rel="nofollow" class="figure__img">
+                                    <img src="./images/logo.png" data-src="./images/actor_img.png" width="115" height="115" alt="">
+                                    <meta itemprop="image" content="./images/actor_img.png">
+                                    <meta itemprop="width" content="115">
+                                    <meta itemprop="height" content="115">
+                                </a>
+                                <div class="figure__desc column">
+                                    <div class="figure__title">
+                                        <a href="#">Tyga</a>
+                                        <meta itemprop="name" content="Tyga">
+                                    </div>
+                                    <span class="figure__text">Hip-hop, Rap</span>
+                                </div>
+                            </div>
+                            <div class="figure figure__item__circle column" itemscope itemtype="http://schema.org/ImageObject">
+                                <a href="#" rel="nofollow" class="figure__img">
+                                    <img src="./images/logo.png" data-src="./images/actor_img.png" width="115" height="115" alt="">
+                                    <meta itemprop="image" content="./images/actor_img.png">
+                                    <meta itemprop="width" content="115">
+                                    <meta itemprop="height" content="115">
+                                </a>
+                                <div class="figure__desc column">
+                                    <div class="figure__title">
+                                        <a href="#">Tyga</a>
+                                        <meta itemprop="name" content="Tyga">
+                                    </div>
+                                    <span class="figure__text">Hip-hop, Rap</span>
+                                </div>
+                            </div>
+                            <div class="figure figure__item__circle column" itemscope itemtype="http://schema.org/ImageObject">
+                                <a href="#" rel="nofollow" class="figure__img">
+                                    <img src="./images/logo.png" data-src="./images/actor_img.png" width="115" height="115" alt="">
+                                    <meta itemprop="image" content="./images/actor_img.png">
+                                    <meta itemprop="width" content="115">
+                                    <meta itemprop="height" content="115">
+                                </a>
+                                <div class="figure__desc column">
+                                    <div class="figure__title">
+                                        <a href="#">Tyga</a>
+                                        <meta itemprop="name" content="Tyga">
+                                    </div>
+                                    <span class="figure__text">Hip-hop, Rap</span>
+                                </div>
+                            </div>
+                            <div class="figure figure__item__circle column" itemscope itemtype="http://schema.org/ImageObject">
+                                <a href="#" rel="nofollow" class="figure__img">
+                                    <img src="./images/logo.png" data-src="./images/actor_img.png" width="115" height="115" alt="">
+                                    <meta itemprop="image" content="./images/actor_img.png">
+                                    <meta itemprop="width" content="115">
+                                    <meta itemprop="height" content="115">
+                                </a>
+                                <div class="figure__desc column">
+                                    <div class="figure__title">
+                                        <a href="#">Tyga</a>
+                                        <meta itemprop="name" content="Tyga">
+                                    </div>
+                                    <span class="figure__text">Hip-hop, Rap</span>
+                                </div>
+                            </div>
+                            <div class="figure figure__item__circle column" itemscope itemtype="http://schema.org/ImageObject">
+                                <a href="#" rel="nofollow" class="figure__img">
+                                    <img src="./images/logo.png" data-src="./images/actor_img.png" width="115" height="115" alt="">
+                                    <meta itemprop="image" content="./images/actor_img.png">
+                                    <meta itemprop="width" content="115">
+                                    <meta itemprop="height" content="115">
+                                </a>
+                                <div class="figure__desc column">
+                                    <div class="figure__title">
+                                        <a href="#">Tyga</a>
+                                        <meta itemprop="name" content="Tyga">
+                                    </div>
+                                    <span class="figure__text">Hip-hop, Rap</span>
+                                </div>
+                            </div>
+                            <div class="figure figure__item__circle column" itemscope itemtype="http://schema.org/ImageObject">
+                                <a href="#" rel="nofollow" class="figure__img">
+                                    <img src="./images/logo.png" data-src="./images/actor_img.png" width="115" height="115" alt="">
+                                    <meta itemprop="image" content="./images/actor_img.png">
+                                    <meta itemprop="width" content="115">
+                                    <meta itemprop="height" content="115">
+                                </a>
+                                <div class="figure__desc column">
+                                    <div class="figure__title">
+                                        <a href="#">Tyga</a>
+                                        <meta itemprop="name" content="Tyga">
+                                    </div>
+                                    <span class="figure__text">Hip-hop, Rap</span>
+                                </div>
+                            </div>
+                            <div class="figure figure__item__circle column" itemscope itemtype="http://schema.org/ImageObject">
+                                <a href="#" rel="nofollow" class="figure__img">
+                                    <img src="./images/logo.png" data-src="./images/actor_img.png" width="115" height="115" alt="">
+                                    <meta itemprop="image" content="./images/actor_img.png">
+                                    <meta itemprop="width" content="115">
+                                    <meta itemprop="height" content="115">
+                                </a>
+                                <div class="figure__desc column">
+                                    <div class="figure__title">
+                                        <a href="#">Tyga</a>
+                                        <meta itemprop="name" content="Tyga">
+                                    </div>
+                                    <span class="figure__text">Hip-hop, Rap</span>
+                                </div>
+                            </div>
+                            <div class="figure figure__item__circle column" itemscope itemtype="http://schema.org/ImageObject">
+                                <a href="#" rel="nofollow" class="figure__img">
+                                    <img src="./images/logo.png" data-src="./images/actor_img.png" width="115" height="115" alt="">
+                                    <meta itemprop="image" content="./images/actor_img.png">
+                                    <meta itemprop="width" content="115">
+                                    <meta itemprop="height" content="115">
+                                </a>
+                                <div class="figure__desc column">
+                                    <div class="figure__title">
+                                        <a href="#">Tyga</a>
+                                        <meta itemprop="name" content="Tyga">
+                                    </div>
+                                    <span class="figure__text">Hip-hop, Rap</span>
+                                </div>
+                            </div>
+                            <div class="figure figure__item__circle column" itemscope itemtype="http://schema.org/ImageObject">
+                                <a href="#" rel="nofollow" class="figure__img">
+                                    <img src="./images/logo.png" data-src="./images/actor_img.png" width="115" height="115" alt="">
+                                    <meta itemprop="image" content="./images/actor_img.png">
+                                    <meta itemprop="width" content="115">
+                                    <meta itemprop="height" content="115">
+                                </a>
+                                <div class="figure__desc column">
+                                    <div class="figure__title">
+                                        <a href="#">Tyga</a>
+                                        <meta itemprop="name" content="Tyga">
+                                    </div>
+                                    <span class="figure__text">Hip-hop, Rap</span>
+                                </div>
+                            </div>
+                            <div class="figure figure__item__circle column" itemscope itemtype="http://schema.org/ImageObject">
+                                <a href="#" rel="nofollow" class="figure__img">
+                                    <img src="./images/logo.png" data-src="./images/actor_img.png" width="115" height="115" alt="">
+                                    <meta itemprop="image" content="./images/actor_img.png">
+                                    <meta itemprop="width" content="115">
+                                    <meta itemprop="height" content="115">
+                                </a>
+                                <div class="figure__desc column">
+                                    <div class="figure__title">
+                                        <a href="#">Tyga</a>
+                                        <meta itemprop="name" content="Tyga">
+                                    </div>
+                                    <span class="figure__text">Hip-hop, Rap</span>
+                                </div>
+                            </div>
+                            <div class="figure figure__item__circle column" itemscope itemtype="http://schema.org/ImageObject">
+                                <a href="#" rel="nofollow" class="figure__img">
+                                    <img src="./images/logo.png" data-src="./images/actor_img.png" width="115" height="115" alt="">
+                                    <meta itemprop="image" content="./images/actor_img.png">
+                                    <meta itemprop="width" content="115">
+                                    <meta itemprop="height" content="115">
+                                </a>
+                                <div class="figure__desc column">
+                                    <div class="figure__title">
+                                        <a href="#">Tyga</a>
+                                        <meta itemprop="name" content="Tyga">
+                                    </div>
+                                    <span class="figure__text">Hip-hop, Rap</span>
+                                </div>
+                            </div>
+                            <div class="figure figure__item__circle column" itemscope itemtype="http://schema.org/ImageObject">
+                                <a href="#" rel="nofollow" class="figure__img">
+                                    <img src="./images/logo.png" data-src="./images/actor_img.png" width="115" height="115" alt="">
+                                    <meta itemprop="image" content="./images/actor_img.png">
+                                    <meta itemprop="width" content="115">
+                                    <meta itemprop="height" content="115">
+                                </a>
+                                <div class="figure__desc column">
+                                    <div class="figure__title">
+                                        <a href="#">Tyga</a>
+                                        <meta itemprop="name" content="Tyga">
+                                    </div>
+                                    <span class="figure__text">Hip-hop, Rap</span>
+                                </div>
+                            </div>
+                            <div class="figure figure__item__circle column" itemscope itemtype="http://schema.org/ImageObject">
+                                <a href="#" rel="nofollow" class="figure__img">
+                                    <img src="./images/logo.png" data-src="./images/actor_img.png" width="115" height="115" alt="">
+                                    <meta itemprop="image" content="./images/actor_img.png">
+                                    <meta itemprop="width" content="115">
+                                    <meta itemprop="height" content="115">
+                                </a>
+                                <div class="figure__desc column">
+                                    <div class="figure__title">
+                                        <a href="#">Tyga</a>
+                                        <meta itemprop="name" content="Tyga">
+                                    </div>
+                                    <span class="figure__text">Hip-hop, Rap</span>
+                                </div>
+                            </div>
+                            <div class="figure figure__item__circle column" itemscope itemtype="http://schema.org/ImageObject">
+                                <a href="#" rel="nofollow" class="figure__img">
+                                    <img src="./images/logo.png" data-src="./images/actor_img.png" width="115" height="115" alt="">
+                                    <meta itemprop="image" content="./images/actor_img.png">
+                                    <meta itemprop="width" content="115">
+                                    <meta itemprop="height" content="115">
+                                </a>
+                                <div class="figure__desc column">
+                                    <div class="figure__title">
+                                        <a href="#">Tyga</a>
+                                        <meta itemprop="name" content="Tyga">
+                                    </div>
+                                    <span class="figure__text">Hip-hop, Rap</span>
+                                </div>
+                            </div>
+                            <div class="figure figure__item__circle column" itemscope itemtype="http://schema.org/ImageObject">
+                                <a href="#" rel="nofollow" class="figure__img">
+                                    <img src="./images/logo.png" data-src="./images/actor_img.png" width="115" height="115" alt="">
+                                    <meta itemprop="image" content="./images/actor_img.png">
+                                    <meta itemprop="width" content="115">
+                                    <meta itemprop="height" content="115">
+                                </a>
+                                <div class="figure__desc column">
+                                    <div class="figure__title">
+                                        <a href="#">Tyga</a>
+                                        <meta itemprop="name" content="Tyga">
+                                    </div>
+                                    <span class="figure__text">Hip-hop, Rap</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="pagination__wrap border__top flex__start">
+                            <ul>
+                                <li class="is-disable"><a href=""><span class="fas fa-angle-left"></span></a></li>
+                                <li><a href="">1</a></li>
+                                <li><span>2</span></li>
+                                <li><a href="">3</a></li>
+                                <li><a href="">...</a></li>
+                                <li><a href="">7</a></li>
+                                <li><a href="">8</a></li>
+                                <li><a href=""><span class="fas fa-angle-right"></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="sidebar__column column scroll__sidebar">
+                <div class="column">
+                    <span class="title">Рейтинг клипов</span>
+                    <ul class="sidebar__menu column flex__between">
+                        <li class="i__top">
+                            <a href="#">Топ HiP-Hop 2019</a>
+                        </li>
+                        <li class="i__bold">
+                            <a href="#">Премьеры новых клипов 2019</a>
+                        </li>
+                        <li class="i__top">
+                            <a href="#">TOP Russia</a>
+                        </li>
+                        <li class="i__fire">
+                            <a href="#">Популярные клипы 2015</a>
+                        </li>
+                        <li class="i__fire">
+                            <a href="#">Популярные Новые клипы</a>
+                        </li>
+                        <li class="i__top">
+                            <a href="#">TOP POP</a>
+                        </li>
+                        <li class="i__top">
+                            <a href="#">TOP ROCK</a>
+                        </li>
+                        <li class="i__glass">
+                            <a href="#">Новогодние клипы</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="column border__top api__wrap">
+                    <a href="#" rel="nofollow" class="title">Новые клипы русские</a>
+                    <div class="sidebar__figure column flex__between">
+                        <div class="figure figure__item__sidebar flex" itemscope
+                             itemtype="http://schema.org/ImageObject">
+                            <a href="#" rel="nofollow" class="figure__img">
+                                <img src="./images/logo.png" data-src="./images/clip-206x177-1.png" width="89"
+                                     height="76" alt="">
+                                <meta itemprop="image" content="./images/clip-206x177-1.png">
+                                <meta itemprop="width" content="89">
+                                <meta itemprop="height" content="76">
+                                <span class="label label__bot label__play small flex" data-frame="kECZnPrIufo">
+                                <i class="fas fa-play"></i>
+                            </span>
+                            </a>
+                            <div class="figure__desc column">
+                                <div class="figure__title">
+                                    <a href="#">Girls Have Fun ft. Rich The Kid, G-Eazy</a>
+                                    <meta itemprop="name" content="Girls Have Fun ft. Rich The  Kid, G-Eazy">
+                                </div>
+                                <span class="figure__text">Roddy Ricch • 2019</span>
+                            </div>
+                        </div>
+                        <div class="figure figure__item__sidebar flex" itemscope
+                             itemtype="http://schema.org/ImageObject">
+                            <a href="#" rel="nofollow" class="figure__img">
+                                <img src="./images/logo.png" data-src="./images/clip-206x177-2.png" width="89"
+                                     height="76" alt="">
+                                <meta itemprop="image" content="./images/clip-206x177-2.png">
+                                <meta itemprop="width" content="89">
+                                <meta itemprop="height" content="76">
+                                <span class="label label__bot label__play small flex" data-frame="CTwiB1uw9sQ">
+                                <i class="fas fa-play"></i>
+                            </span>
+                            </a>
+                            <div class="figure__desc column">
+                                <div class="figure__title">
+                                    <a href="#">Girls Have Fun ft. Rich The Kid, G-Eazy</a>
+                                    <meta itemprop="name" content="Girls Have Fun ft. Rich The  Kid, G-Eazy">
+                                </div>
+                                <span class="figure__text">Roddy Ricch • 2019</span>
+                            </div>
+                        </div>
+                        <div class="figure figure__item__sidebar flex" itemscope
+                             itemtype="http://schema.org/ImageObject">
+                            <a href="#" rel="nofollow" class="figure__img">
+                                <img src="./images/logo.png" data-src="./images/clip-206x177-3.png" width="89"
+                                     height="76" alt="">
+                                <meta itemprop="image" content="./images/clip-206x177-3.png">
+                                <meta itemprop="width" content="89">
+                                <meta itemprop="height" content="76">
+                                <span class="label label__bot label__play small flex" data-frame="aS_wdyhu0xQ">
+                                <i class="fas fa-play"></i>
+                            </span>
+                            </a>
+                            <div class="figure__desc column">
+                                <div class="figure__title">
+                                    <a href="#">Girls Have Fun ft. Rich The Kid, G-Eazy</a>
+                                    <meta itemprop="name" content="Girls Have Fun ft. Rich The  Kid, G-Eazy">
+                                </div>
+                                <span class="figure__text">Roddy Ricch • 2019</span>
+                            </div>
+                        </div>
+                        <div class="figure figure__item__sidebar flex" itemscope
+                             itemtype="http://schema.org/ImageObject">
+                            <a href="#" rel="nofollow" class="figure__img">
+                                <img src="./images/logo.png" data-src="./images/clip-206x177-5.png" width="89"
+                                     height="76" alt="">
+                                <meta itemprop="image" content="./images/clip-206x177-5.png">
+                                <meta itemprop="width" content="89">
+                                <meta itemprop="height" content="76">
+                                <span class="label label__bot label__play small flex" data-frame="xSgT4ZtT5M0">
+                                <i class="fas fa-play"></i>
+                            </span>
+                            </a>
+                            <div class="figure__desc column">
+                                <div class="figure__title">
+                                    <a href="#">Girls Have Fun ft. Rich The Kid, G-Eazy</a>
+                                    <meta itemprop="name" content="Girls Have Fun ft. Rich The  Kid, G-Eazy">
+                                </div>
+                                <span class="figure__text">Roddy Ricch • 2019</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn__blue play__all">
+                        <span class="btn__next">Воспроизвести все</span>
+                    </div>
+                </div>
+                <div class="column border__top">
+                    <a href="#" rel="nofollow" class="title">Популярные зарубежные клипы 2019</a>
+                    <div class="sidebar__figure column flex__between">
+                        <div class="figure figure__item__sidebar flex" itemscope
+                             itemtype="http://schema.org/ImageObject">
+                            <a href="#" rel="nofollow" class="figure__img">
+                                <img src="./images/logo.png" data-src="./images/clip-206x177-1.png" width="89"
+                                     height="76" alt="">
+                                <meta itemprop="image" content="./images/clip-206x177-1.png">
+                                <meta itemprop="width" content="89">
+                                <meta itemprop="height" content="76">
+                                <span class="label label__bot label__play small flex" data-frame="xSgT4ZtT5M0">
+                                <i class="fas fa-play"></i>
+                            </span>
+                            </a>
+                            <div class="figure__desc column">
+                                <div class="figure__title">
+                                    <a href="#">Girls Have Fun ft. Rich The Kid, G-Eazy</a>
+                                    <meta itemprop="name" content="Girls Have Fun ft. Rich The  Kid, G-Eazy">
+                                </div>
+                                <span class="figure__text">Roddy Ricch • 2019</span>
+                            </div>
+                        </div>
+                        <div class="figure figure__item__sidebar flex" itemscope
+                             itemtype="http://schema.org/ImageObject">
+                            <a href="#" rel="nofollow" class="figure__img">
+                                <img src="./images/logo.png" data-src="./images/clip-206x177-2.png" width="89"
+                                     height="76" alt="">
+                                <meta itemprop="image" content="./images/clip-206x177-2.png">
+                                <meta itemprop="width" content="89">
+                                <meta itemprop="height" content="76">
+                                <span class="label label__bot label__play small flex" data-frame="xSgT4ZtT5M0">
+                                <i class="fas fa-play"></i>
+                            </span>
+                            </a>
+                            <div class="figure__desc column">
+                                <div class="figure__title">
+                                    <a href="#">Girls Have Fun ft. Rich The Kid, G-Eazy</a>
+                                    <meta itemprop="name" content="Girls Have Fun ft. Rich The  Kid, G-Eazy">
+                                </div>
+                                <span class="figure__text">Roddy Ricch • 2019</span>
+                            </div>
+                        </div>
+                        <div class="figure figure__item__sidebar flex" itemscope
+                             itemtype="http://schema.org/ImageObject">
+                            <a href="#" rel="nofollow" class="figure__img">
+                                <img src="./images/logo.png" data-src="./images/clip-206x177-3.png" width="89"
+                                     height="76" alt="">
+                                <meta itemprop="image" content="./images/clip-206x177-3.png">
+                                <meta itemprop="width" content="89">
+                                <meta itemprop="height" content="76">
+                                <span class="label label__bot label__play small flex" data-frame="xSgT4ZtT5M0">
+                                <i class="fas fa-play"></i>
+                            </span>
+                            </a>
+                            <div class="figure__desc column">
+                                <div class="figure__title">
+                                    <a href="#">Girls Have Fun ft. Rich The Kid, G-Eazy</a>
+                                    <meta itemprop="name" content="Girls Have Fun ft. Rich The  Kid, G-Eazy">
+                                </div>
+                                <span class="figure__text">Roddy Ricch • 2019</span>
+                            </div>
+                        </div>
+                        <div class="figure figure__item__sidebar flex" itemscope
+                             itemtype="http://schema.org/ImageObject">
+                            <a href="#" rel="nofollow" class="figure__img">
+                                <img src="./images/logo.png" data-src="./images/clip-206x177-5.png" width="89"
+                                     height="76" alt="">
+                                <meta itemprop="image" content="./images/clip-206x177-5.png">
+                                <meta itemprop="width" content="89">
+                                <meta itemprop="height" content="76">
+                                <span class="label label__bot label__play small flex" data-frame="xSgT4ZtT5M0">
+                                <i class="fas fa-play"></i>
+                            </span>
+                            </a>
+                            <div class="figure__desc column">
+                                <div class="figure__title">
+                                    <a href="#">Girls Have Fun ft. Rich The Kid, G-Eazy</a>
+                                    <meta itemprop="name" content="Girls Have Fun ft. Rich The  Kid, G-Eazy">
+                                </div>
+                                <span class="figure__text">Roddy Ricch • 2019</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" rel="nofollow" class="btn__next">Смотреть все</a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+<div class="frame__modal column">
+    <div id="frame"></div>
+    <div class="frame__info flex flex__between">
+        <div class="column">
+            <span class="gray">Сейчас воспроизводится</span>
+            <span class="frame__name">Популярные клипы Tyga</span>
+        </div>
+        <div class="frame__close flex">
+            Закрыть
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="foot__top">
+        <div class="container flex flex__start">
+            <div class="foot__logo" itemscope itemtype="http://schema.org/Organization">
+                <a itemprop="url" href="/">
+                    <img itemprop="logo" src="/images/logo-light.png" alt="logo">
+                </a>
+                <meta itemprop="name" content="NAME">
+                <meta itemprop="address" content="ADDRESS">
+                <meta itemprop="telephone" content="TELEPHONE">
+            </div>
+            <nav class="foot__nav flex" itemscope="" itemtype="http://schema.org/SiteNavigationElement">
+                <ul class="flex__between" itemprop="about" itemscope="" itemtype="http://schema.org/ItemList">
+                    <li itemprop="itemListElement">
+                        <a href="#" itemprop="url">Стол заказов</a>
+                        <meta itemprop="name" content="Стол заказов" />
+                    </li>
+                    <li itemprop="itemListElement">
+                        <a href="#" itemprop="url">Карта сайта</a>
+                        <meta itemprop="name" content="Карта сайта" />
+                    </li>
+                    <li itemprop="itemListElement">
+                        <a href="#" itemprop="url">Контакты</a>
+                        <meta itemprop="name" content="Контакты" />
+                    </li>
+                    <li itemprop="itemListElement">
+                        <a href="#" itemprop="url">Правообладателям</a>
+                        <meta itemprop="name" content="Правообладателям" />
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+    </div>
+    <div class="foot__bottom ">
+        <div class="container flex flex__between">
+            <span class="foot__copy">© 2019 Topklip.ru</span>
+            <span class="foot__small"> Сайт может содержать контент, не предназначенный для лиц младше 18 лет</span>
+        </div>
+    </div>
+</footer>
+
+<link rel="stylesheet" href="/css/libs.min.css">
+<link rel="stylesheet" href="/css/jquery.fancybox.min.css">
+<link rel="stylesheet" href="/css/slick.css">
+<link rel="stylesheet" href="/css/slick-theme.css">
+<link rel="stylesheet" href="/css/fontawesome.css">
+<link rel="stylesheet" href="/css/loader.css">
+<link rel="stylesheet" href="/css/main.min.css">
+
+<script src="/js/jquery.min.js"></script>
+<script src="/js/jquery.fancybox.min.js"></script>
+<script src="/js/slick.min.js"></script>
+<script src="/js/jquery.lazy.js"></script>
+<script src="/js/jquery.draggable.min.js"></script>
+<script src="/js/common.js"></script>
+
+</body>
+
+</html>
+
+
+
+

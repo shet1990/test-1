@@ -1,0 +1,1463 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <meta charset="utf-8">
+    <!-- <base href="/"> -->
+
+    <title>Title</title>
+    <meta name="description" content="">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Template Basic Images Start -->
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="icon" href="images/favicon/favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/favicon.png">
+    <!-- Template Basic Images End -->
+
+    <!-- Custom Browsers Color Start -->
+    <meta name="theme-color" content="#000">
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebSite">
+
+<header>
+    <div class="container column">
+        <div class="head__top flex flex__between">
+            <div class="head__logo" itemscope itemtype="http://schema.org/Organization">
+                <a itemprop="url" href="/">
+                    <img itemprop="logo" src="/images/logo.png" alt="logo">
+                </a>
+                <meta itemprop="name" content="NAME">
+                <meta itemprop="address" content="ADDRESS">
+                <meta itemprop="telephone" content="TELEPHONE">
+            </div>
+            <span class="head__desc">Бесплатно смотреть клипы по всем жанрам и исполнителям</span>
+            <div class="spacer"></div>
+            <form action="/" class="head__search flex" itemprop="potentialAction" itemscope="" itemtype="https://schema.org/SearchAction">
+                <meta itemprop="target" content="/search/{query}">
+                <link itemprop="url" href="http://www.example.com/"/>
+                <div class="input__search">
+                    <input type="text" placeholder="Найти клипы" itemprop="query">
+                </div>
+                <div class="select__wrap select__search">
+                    <div class="select__tab">
+                        <span>По исполнителю</span>
+                    </div>
+                    <ul class="one__option select__hide">
+                        <li class="is-active" data-val="author">По исполнителю</li>
+                        <li data-val="name">По названию</li>
+                        <li data-val="date">По дате</li>
+                    </ul>
+                    <input name="cat" type="hidden" value="">
+                </div>
+                <input type="submit" value="Искать!" class="submit__search">
+            </form>
+            <div class="my__hamburger">
+                <div class="hamburger__block">
+                    <div class="hamburger__top"></div>
+                    <div class="hamburger__bottom"></div>
+                </div>
+            </div>
+        </div>
+        <nav class="head__nav flex" itemscope="" itemtype="http://schema.org/SiteNavigationElement">
+            <ul class="flex__between flex__wrap" itemprop="about" itemscope="" itemtype="http://schema.org/ItemList">
+                <li class="i i__home" itemprop="itemListElement">
+                    <a href="#" itemprop="url">Главная</a>
+                    <meta itemprop="name" content="Главная" />
+                </li>
+                <li class="i i__fire" itemprop="itemListElement">
+                    <a href="#" itemprop="url">Популярные клипы</a>
+                    <meta itemprop="name" content="Популярные клипы" />
+                </li>
+                <li class="i i__bold" itemprop="itemListElement">
+                    <a href="#" itemprop="url">Новые клипы</a>
+                    <meta itemprop="name" content="Новые клипы" />
+                </li>
+                <li class="menu-item-has-children" itemprop="itemListElement">
+                    <a href="#" itemprop="url">Жанры</a>
+                    <meta itemprop="name" content="Жанры" />
+
+                    <ul class="sub-menu" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ItemList">
+                        <li itemprop="itemListElement">
+                            <a href="#" itemprop="url">R`N`B</a>
+                            <meta itemprop="name" content="R`N`B" />
+                        </li>
+                        <li itemprop="itemListElement">
+                            <a href="#" itemprop="url">Pop</a>
+                            <meta itemprop="name" content="Pop" />
+                        </li>
+                        <li itemprop="itemListElement">
+                            <a href="#" itemprop="url">Rock</a>
+                            <meta itemprop="name" content="Rock" />
+                        </li>
+                        <li itemprop="itemListElement">
+                            <a href="#" itemprop="url">Electronic</a>
+                            <meta itemprop="name" content="Electronic" />
+                        </li>
+                        <li itemprop="itemListElement">
+                            <a href="#" itemprop="url">Hip-hop & Rap</a>
+                            <meta itemprop="name" content="Hip-hop & Rap" />
+                        </li>
+                    </ul>
+                </li>
+                <li itemprop="itemListElement">
+                    <a href="#" itemprop="url">Исполнители</a>
+                    <meta itemprop="name" content="Исполнители" />
+                </li>
+                <li itemprop="itemListElement">
+                    <a href="#" itemprop="url">Страны</a>
+                    <meta itemprop="name" content="Страны" />
+                </li>
+                <li itemprop="itemListElement">
+                    <a href="#" itemprop="url">Американские клипы</a>
+                    <meta itemprop="name" content="Американские клипы" />
+                </li>
+                <li itemprop="itemListElement">
+                    <a href="#" itemprop="url">Русские клипы</a>
+                    <meta itemprop="name" content="Русские клипы" />
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+
+    <section class="slider__section">
+        <div class="container flex flex__start">
+            <div class="slider__wrap slider__slick">
+                <a href="#" class="slider__item bg__cover" style="background-image: url('./images/top-slide.png')">
+                    <div class="slider__title column">
+                        <h2 class="title shadow">10 Songs by Rico Nasty That Show Why She’s One of the Hardest Rappers In the Game</h2>
+                    </div>
+                </a>
+                <a href="#" class="slider__item bg__cover" style="background-image: url('./images/clip-206x177-1.png')">
+                    <div class="slider__title column">
+                        <h2 class="title shadow">20 Songs by Rico Nasty That Show Why She’s One of the Hardest Rappers In the Game</h2>
+                    </div>
+                </a>
+                <a href="#" class="slider__item bg__cover" style="background-image: url('./images/clip-206x177-2.png')">
+                    <div class="slider__title column">
+                        <h2 class="title shadow">30 Songs by Rico Nasty That Show Why She’s One of the Hardest Rappers In the Game</h2>
+                    </div>
+                </a>
+            </div>
+            <div class="sidebar__column column">
+                <span class="title">Рейтинг клипов</span>
+                <ul class="sidebar__menu column flex__between">
+                    <li class="i__top">
+                        <a href="#">Топ HiP-Hop 2019</a>
+                    </li>
+                    <li class="i__bold">
+                        <a href="#">Премьеры новых клипов 2019</a>
+                    </li>
+                    <li class="i__top">
+                        <a href="#">TOP Russia</a>
+                    </li>
+                    <li class="i__fire">
+                        <a href="#">Популярные клипы 2015</a>
+                    </li>
+                    <li class="i__fire">
+                        <a href="#">Популярные Новые клипы</a>
+                    </li>
+                    <li class="i__top">
+                        <a href="#">TOP POP</a>
+                    </li>
+                    <li class="i__top">
+                        <a href="#">TOP ROCK</a>
+                    </li>
+                    <li class="i__glass">
+                        <a href="#">Новогодние клипы</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="tags__section">
+        <div class="container">
+            <h3 class="tags__title">Полулярные жанры:</h3>
+            <div class="tags__row flex flex__start flex__wrap">
+                <div class="btn__gray">R`N`B</div>
+                <div class="btn__gray">Dance</div>
+                <div class="btn__gray">House</div>
+                <div class="btn__gray">Electronic</div>
+                <div class="btn__gray">Hip-Hop & Rap</div>
+                <div class="btn__gray">Trap</div>
+                <div class="btn__gray">Dance</div>
+                <div class="btn__gray">Hip-Hop & Rap</div>
+                <div class="btn__gray">R`N`B</div>
+                <div class="btn__gray">Dance</div>
+                <div class="btn__gray">House</div>
+                <div class="btn__gray">Electronic</div>
+                <div class="btn__gray is-active">Все жанры</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="figure__row">
+        <div class="container">
+
+            <div class="figure__top flex__wrap flex__between">
+                <h2 class="h2"><a href="#" rel="nofollow">Популярные клипы</a></h2>
+                <a href="#" rel="nofollow" class="btn__next">Смотреть все</a>
+            </div>
+
+            <div class="figure__wrap flex__between  flex__wrap">
+                <div class="figure figure__item column" itemscope itemtype="http://schema.org/ImageObject">
+                    <a href="#" rel="nofollow" class="figure__img">
+                        <img src="./images/logo.png" data-src="./images/clip-206x177-1.png" width="206" height="177" alt="">
+                        <meta itemprop="image" content="./images/clip-206x177-1.png">
+                        <meta itemprop="width" content="206">
+                        <meta itemprop="height" content="177">
+                        <span class="label label__top flex">
+                            <i class="fas fa-fire"></i>
+                        </span>
+                        <span class="label label__bot label__play flex" data-frame="aS_wdyhu0xQ">
+                            <i class="fas fa-play"></i>
+                        </span>
+                    </a>
+                    <div class="figure__desc column">
+                        <div class="figure__title">
+                            <a href="#">Girls Have Fun ft. Rich The  Kid, G-Eazy</a>
+                            <meta itemprop="name" content="Girls Have Fun ft. Rich The  Kid, G-Eazy">
+                        </div>
+                        <span class="figure__text">Roddy Ricch • 2019</span>
+                    </div>
+                </div>
+                <div class="figure figure__item column" itemscope itemtype="http://schema.org/ImageObject">
+                    <a href="#" rel="nofollow" class="figure__img">
+                        <img src="./images/logo.png" data-src="./images/clip-206x177-2.png" width="206" height="177" alt="">
+                        <meta itemprop="image" content="./images/clip-206x177-2.png">
+                        <meta itemprop="width" content="206">
+                        <meta itemprop="height" content="177">
+                        <span class="label label__top flex">
+                            <i class="fas fa-fire"></i>
+                        </span>
+                        <span class="label label__bot label__play flex" data-frame="xSgT4ZtT5M0">
+                            <i class="fas fa-play"></i>
+                        </span>
+                    </a>
+                    <div class="figure__desc column">
+                        <div class="figure__title">
+                            <a href="#">Girls Have Fun ft. Rich The  Kid, G-Eazy</a>
+                            <meta itemprop="name" content="Girls Have Fun ft. Rich The  Kid, G-Eazy">
+                        </div>
+                        <span class="figure__text">Roddy Ricch • 2019</span>
+                    </div>
+                </div>
+                <div class="figure figure__item column" itemscope itemtype="http://schema.org/ImageObject">
+                    <a href="#" rel="nofollow" class="figure__img">
+                        <img src="./images/logo.png" data-src="./images/clip-206x177-3.png" width="206" height="177" alt="">
+                        <meta itemprop="image" content="./images/clip-206x177-3.png">
+                        <meta itemprop="width" content="206">
+                        <meta itemprop="height" content="177">
+                        <span class="label label__top flex">
+                            <i class="fas fa-fire"></i>
+                        </span>
+                        <span class="label label__bot label__play flex" data-frame="xSgT4ZtT5M0">
+                            <i class="fas fa-play"></i>
+                        </span>
+                    </a>
+                    <div class="figure__desc column">
+                        <div class="figure__title">
+                            <a href="#">Girls Have Fun ft. Rich The  Kid, G-Eazy</a>
+                            <meta itemprop="name" content="Girls Have Fun ft. Rich The  Kid, G-Eazy">
+                        </div>
+                        <span class="figure__text">Roddy Ricch • 2019</span>
+                    </div>
+                </div>
+                <div class="figure figure__item column" itemscope itemtype="http://schema.org/ImageObject">
+                    <a href="#" rel="nofollow" class="figure__img">
+                        <img src="./images/logo.png" data-src="./images/clip-206x177-4.png" width="206" height="177" alt="">
+                        <meta itemprop="image" content="./images/clip-206x177-4.png">
+                        <meta itemprop="width" content="206">
+                        <meta itemprop="height" content="177">
+                        <span class="label label__top flex">
+                            <i class="fas fa-fire"></i>
+                        </span>
+                        <span class="label label__bot label__play flex" data-frame="xSgT4ZtT5M0">
+                            <i class="fas fa-play"></i>
+                        </span>
+                    </a>
+                    <div class="figure__desc column">
+                        <div class="figure__title">
+                            <a href="#">Girls Have Fun ft. Rich The  Kid, G-Eazy</a>
+                            <meta itemprop="name" content="Girls Have Fun ft. Rich The  Kid, G-Eazy">
+                        </div>
+                        <span class="figure__text">Roddy Ricch • 2019</span>
+                    </div>
+                </div>
+                <div class="figure figure__item column" itemscope itemtype="http://schema.org/ImageObject">
+                    <a href="#" rel="nofollow" class="figure__img">
+                        <img src="./images/logo.png" data-src="./images/clip-206x177-5.png" width="206" height="177" alt="">
+                        <meta itemprop="image" content="./images/clip-206x177-5.png">
+                        <meta itemprop="width" content="206">
+                        <meta itemprop="height" content="177">
+                        <span class="label label__top flex">
+                            <i class="fas fa-fire"></i>
+                        </span>
+                        <span class="label label__bot label__play flex" data-frame="xSgT4ZtT5M0">
+                            <i class="fas fa-play"></i>
+                        </span>
+                    </a>
+                    <div class="figure__desc column">
+                        <div class="figure__title">
+                            <a href="#">Girls Have Fun ft. Rich The  Kid, G-Eazy</a>
+                            <meta itemprop="name" content="Girls Have Fun ft. Rich The  Kid, G-Eazy">
+                        </div>
+                        <span class="figure__text">Roddy Ricch • 2019</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="double__row">
+        <div class="container flex flex__start">
+
+            <div class="double__wrap border__top">
+
+                <div class="figure__top flex__wrap flex__between">
+                    <h2 class="h2 after__top"><a href="#" rel="nofollow">Новые клипы</a> <span class="after">ТОП</span></h2>
+                    <a href="#" rel="nofollow" class="btn__next">Смотреть все</a>
+                </div>
+
+                <div class="figure__wrap flex__between flex__wrap">
+
+                    <div class="figure figure__item__row flex" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="#" rel="nofollow" class="figure__img">
+                            <img src="./images/logo.png" data-src="./images/clip-206x177-1.png" width="110" height="94" alt="">
+                            <meta itemprop="image" content="./images/clip-206x177-1.png">
+                            <meta itemprop="width" content="110">
+                            <meta itemprop="height" content="94">
+                            <span class="label label__center label__play flex" data-frame="xSgT4ZtT5M0">
+                                <i class="fas fa-play"></i>
+                            </span>
+                        </a>
+                        <div class="figure__desc column">
+                            <div class="figure__title">
+                                <a href="#">Girls Have Fun ft. Rich The  Kid, G-Eazy</a>
+                                <meta itemprop="name" content="Girls Have Fun ft. Rich The  Kid, G-Eazy">
+                            </div>
+                            <span class="figure__text">Roddy Ricch • 2019</span>
+                        </div>
+                        <div class="figure__count flex">
+                            <i class="fas fa-eye"></i>
+                            600K
+                        </div>
+                    </div>
+
+                    <div class="figure figure__item__row flex" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="#" rel="nofollow" class="figure__img">
+                            <img src="./images/logo.png" data-src="./images/clip-206x177-2.png" width="110" height="94" alt="">
+                            <meta itemprop="image" content="./images/clip-206x177-2.png">
+                            <meta itemprop="width" content="110">
+                            <meta itemprop="height" content="94">
+                            <span class="label label__center label__play flex" data-frame="xSgT4ZtT5M0">
+                                <i class="fas fa-play"></i>
+                            </span>
+                        </a>
+                        <div class="figure__desc column">
+                            <div class="figure__title">
+                                <a href="#">Girls Have Fun ft. Rich The  Kid, G-Eazy</a>
+                                <meta itemprop="name" content="Girls Have Fun ft. Rich The  Kid, G-Eazy">
+                            </div>
+                            <span class="figure__text">Roddy Ricch • 2019</span>
+                        </div>
+                        <div class="figure__count flex">
+                            <i class="fas fa-eye"></i>
+                            600K
+                        </div>
+                    </div>
+
+                    <div class="figure figure__item__row flex" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="#" rel="nofollow" class="figure__img">
+                            <img src="./images/logo.png" data-src="./images/clip-206x177-3.png" width="110" height="94" alt="">
+                            <meta itemprop="image" content="./images/clip-206x177-3.png">
+                            <meta itemprop="width" content="110">
+                            <meta itemprop="height" content="94">
+                            <span class="label label__center label__play flex" data-frame="xSgT4ZtT5M0">
+                                <i class="fas fa-play"></i>
+                            </span>
+                        </a>
+                        <div class="figure__desc column">
+                            <div class="figure__title">
+                                <a href="#">Girls Have Fun ft. Rich The  Kid, G-Eazy</a>
+                                <meta itemprop="name" content="Girls Have Fun ft. Rich The  Kid, G-Eazy">
+                            </div>
+                            <span class="figure__text">Roddy Ricch • 2019</span>
+                        </div>
+                        <div class="figure__count flex">
+                            <i class="fas fa-eye"></i>
+                            600K
+                        </div>
+                    </div>
+
+                    <div class="figure figure__item__row flex" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="#" rel="nofollow" class="figure__img">
+                            <img src="./images/logo.png" data-src="./images/clip-206x177-4.png" width="110" height="94" alt="">
+                            <meta itemprop="image" content="./images/clip-206x177-4.png">
+                            <meta itemprop="width" content="110">
+                            <meta itemprop="height" content="94">
+                            <span class="label label__center label__play flex" data-frame="xSgT4ZtT5M0">
+                                <i class="fas fa-play"></i>
+                            </span>
+                        </a>
+                        <div class="figure__desc column">
+                            <div class="figure__title">
+                                <a href="#">Girls Have Fun ft. Rich The  Kid, G-Eazy</a>
+                                <meta itemprop="name" content="Girls Have Fun ft. Rich The  Kid, G-Eazy">
+                            </div>
+                            <span class="figure__text">Roddy Ricch • 2019</span>
+                        </div>
+                        <div class="figure__count flex">
+                            <i class="fas fa-eye"></i>
+                            600K
+                        </div>
+                    </div>
+
+                    <div class="figure figure__item__row flex" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="#" rel="nofollow" class="figure__img">
+                            <img src="./images/logo.png" data-src="./images/clip-206x177-5.png" width="110" height="94" alt="">
+                            <meta itemprop="image" content="./images/clip-206x177-5.png">
+                            <meta itemprop="width" content="110">
+                            <meta itemprop="height" content="94">
+                            <span class="label label__center label__play flex" data-frame="xSgT4ZtT5M0">
+                                <i class="fas fa-play"></i>
+                            </span>
+                        </a>
+                        <div class="figure__desc column">
+                            <div class="figure__title">
+                                <a href="#">Girls Have Fun ft. Rich The  Kid, G-Eazy</a>
+                                <meta itemprop="name" content="Girls Have Fun ft. Rich The  Kid, G-Eazy">
+                            </div>
+                            <span class="figure__text">Roddy Ricch • 2019</span>
+                        </div>
+                        <div class="figure__count flex">
+                            <i class="fas fa-eye"></i>
+                            600K
+                        </div>
+                    </div>
+
+                    <div class="figure figure__item__row flex" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="#" rel="nofollow" class="figure__img">
+                            <img src="./images/logo.png" data-src="./images/clip-206x177-5.png" width="110" height="94" alt="">
+                            <meta itemprop="image" content="./images/clip-206x177-5.png">
+                            <meta itemprop="width" content="110">
+                            <meta itemprop="height" content="94">
+                            <span class="label label__center label__play flex" data-frame="xSgT4ZtT5M0">
+                                <i class="fas fa-play"></i>
+                            </span>
+                        </a>
+                        <div class="figure__desc column">
+                            <div class="figure__title">
+                                <a href="#">Girls Have Fun ft. Rich The  Kid, G-Eazy</a>
+                                <meta itemprop="name" content="Girls Have Fun ft. Rich The  Kid, G-Eazy">
+                            </div>
+                            <span class="figure__text">Roddy Ricch • 2019</span>
+                        </div>
+                        <div class="figure__count flex">
+                            <i class="fas fa-eye"></i>
+                            600K
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="sidebar__column border__top column api__wrap">
+                <a href="#" rel="nofollow" class="title">Новые релизы 2019</a>
+                <div class="sidebar__figure column flex__between">
+                    <div class="figure figure__item__sidebar flex" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="#" rel="nofollow" class="figure__img">
+                            <img src="./images/logo.png" data-src="./images/clip-206x177-1.png" width="89" height="76" alt="">
+                            <meta itemprop="image" content="./images/clip-206x177-1.png">
+                            <meta itemprop="width" content="89">
+                            <meta itemprop="height" content="76">
+                            <span class="label label__bot label__play small flex" data-frame="kECZnPrIufo">
+                                <i class="fas fa-play"></i>
+                            </span>
+                        </a>
+                        <div class="figure__desc column">
+                            <div class="figure__title">
+                                <a href="#">Girls Have Fun ft. Rich The  Kid, G-Eazy</a>
+                                <meta itemprop="name" content="Girls Have Fun ft. Rich The  Kid, G-Eazy">
+                            </div>
+                            <span class="figure__text">Roddy Ricch • 2019</span>
+                        </div>
+                    </div>
+                    <div class="figure figure__item__sidebar flex" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="#" rel="nofollow" class="figure__img">
+                            <img src="./images/logo.png" data-src="./images/clip-206x177-2.png" width="89" height="76" alt="">
+                            <meta itemprop="image" content="./images/clip-206x177-2.png">
+                            <meta itemprop="width" content="89">
+                            <meta itemprop="height" content="76">
+                            <span class="label label__bot label__play small flex" data-frame="CTwiB1uw9sQ">
+                                <i class="fas fa-play"></i>
+                            </span>
+                        </a>
+                        <div class="figure__desc column">
+                            <div class="figure__title">
+                                <a href="#">Girls Have Fun ft. Rich The  Kid, G-Eazy</a>
+                                <meta itemprop="name" content="Girls Have Fun ft. Rich The  Kid, G-Eazy">
+                            </div>
+                            <span class="figure__text">Roddy Ricch • 2019</span>
+                        </div>
+                    </div>
+                    <div class="figure figure__item__sidebar flex" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="#" rel="nofollow" class="figure__img">
+                            <img src="./images/logo.png" data-src="./images/clip-206x177-3.png" width="89" height="76" alt="">
+                            <meta itemprop="image" content="./images/clip-206x177-3.png">
+                            <meta itemprop="width" content="89">
+                            <meta itemprop="height" content="76">
+                            <span class="label label__bot label__play small flex" data-frame="aS_wdyhu0xQ">
+                                <i class="fas fa-play"></i>
+                            </span>
+                        </a>
+                        <div class="figure__desc column">
+                            <div class="figure__title">
+                                <a href="#">Girls Have Fun ft. Rich The  Kid, G-Eazy</a>
+                                <meta itemprop="name" content="Girls Have Fun ft. Rich The  Kid, G-Eazy">
+                            </div>
+                            <span class="figure__text">Roddy Ricch • 2019</span>
+                        </div>
+                    </div>
+                    <div class="figure figure__item__sidebar flex" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="#" rel="nofollow" class="figure__img">
+                            <img src="./images/logo.png" data-src="./images/clip-206x177-5.png" width="89" height="76" alt="">
+                            <meta itemprop="image" content="./images/clip-206x177-5.png">
+                            <meta itemprop="width" content="89">
+                            <meta itemprop="height" content="76">
+                            <span class="label label__bot label__play small flex" data-frame="xSgT4ZtT5M0">
+                                <i class="fas fa-play"></i>
+                            </span>
+                        </a>
+                        <div class="figure__desc column">
+                            <div class="figure__title">
+                                <a href="#">Girls Have Fun ft. Rich The  Kid, G-Eazy</a>
+                                <meta itemprop="name" content="Girls Have Fun ft. Rich The  Kid, G-Eazy">
+                            </div>
+                            <span class="figure__text">Roddy Ricch • 2019</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn__blue play__all">
+                    <span class="btn__next">Воспроизвести все</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="double__row">
+        <div class="container flex flex__start">
+
+            <div class="double__wrap border__top">
+
+                <div class="figure__top flex__wrap flex__between">
+                    <h2 class="h2"><a href="#" rel="nofollow">Новые клипы</a></h2>
+                    <div class="flex">
+                        <span class="i i__video">50 видео</span>
+                        <span class="i i__star">4,8</span>
+                    </div>
+                </div>
+
+                <div class="figure__wrap column">
+
+                    <div class="figure figure__item__full flex__start" itemscope itemtype="http://schema.org/ImageObject">
+                        <span class="figure__number">1</span>
+                        <a href="#" rel="nofollow" class="figure__img">
+                            <img src="./images/logo.png" data-src="./images/clip-206x177-1.png" width="60" height="51" alt="">
+                            <meta itemprop="image" content="./images/clip-206x177-1.png">
+                            <meta itemprop="width" content="60">
+                            <meta itemprop="height" content="51">
+                            <span class="label label__center label__play flex" data-frame="xSgT4ZtT5M0">
+                                <i class="fas fa-play"></i>
+                            </span>
+                        </a>
+                        <span class="figure__timer">3.15</span>
+                        <div class="figure__desc column">
+                            <div class="figure__title">
+                                <a href="#">Girls Have Fun ft. Rich The  Kid, G-Eazy</a>
+                                <meta itemprop="name" content="Girls Have Fun ft. Rich The  Kid, G-Eazy">
+                            </div>
+                            <span class="figure__text">Roddy Ricch • 2019</span>
+                        </div>
+                        <div class="figure__count flex">
+                            <i class="fas fa-eye"></i>
+                            600K
+                        </div>
+                    </div>
+                    <div class="figure figure__item__full flex__start" itemscope itemtype="http://schema.org/ImageObject">
+                        <span class="figure__number">2</span>
+                        <a href="#" rel="nofollow" class="figure__img">
+                            <img src="./images/logo.png" data-src="./images/clip-206x177-2.png" width="60" height="51" alt="">
+                            <meta itemprop="image" content="./images/clip-206x177-2.png">
+                            <meta itemprop="width" content="60">
+                            <meta itemprop="height" content="51">
+                            <span class="label label__center label__play flex" data-frame="xSgT4ZtT5M0">
+                                <i class="fas fa-play"></i>
+                            </span>
+                        </a>
+                        <span class="figure__timer">3.15</span>
+                        <div class="figure__desc column">
+                            <div class="figure__title">
+                                <a href="#">Girls Have Fun ft. Rich The  Kid, G-Eazy</a>
+                                <meta itemprop="name" content="Girls Have Fun ft. Rich The  Kid, G-Eazy">
+                            </div>
+                            <span class="figure__text">Roddy Ricch • 2019</span>
+                        </div>
+                        <div class="figure__count flex">
+                            <i class="fas fa-eye"></i>
+                            600K
+                        </div>
+                    </div>
+                    <div class="figure figure__item__full flex__start" itemscope itemtype="http://schema.org/ImageObject">
+                        <span class="figure__number">3</span>
+                        <a href="#" rel="nofollow" class="figure__img">
+                            <img src="./images/logo.png" data-src="./images/clip-206x177-3.png" width="60" height="51" alt="">
+                            <meta itemprop="image" content="./images/clip-206x177-3.png">
+                            <meta itemprop="width" content="60">
+                            <meta itemprop="height" content="51">
+                            <span class="label label__center label__play flex" data-frame="xSgT4ZtT5M0">
+                                <i class="fas fa-play"></i>
+                            </span>
+                        </a>
+                        <span class="figure__timer">3.15</span>
+                        <div class="figure__desc column">
+                            <div class="figure__title">
+                                <a href="#">Girls Have Fun ft. Rich The  Kid, G-Eazy</a>
+                                <meta itemprop="name" content="Girls Have Fun ft. Rich The  Kid, G-Eazy">
+                            </div>
+                            <span class="figure__text">Roddy Ricch • 2019</span>
+                        </div>
+                        <div class="figure__count flex">
+                            <i class="fas fa-eye"></i>
+                            600K
+                        </div>
+                    </div>
+                    <div class="figure figure__item__full flex__start" itemscope itemtype="http://schema.org/ImageObject">
+                        <span class="figure__number">4</span>
+                        <a href="#" rel="nofollow" class="figure__img">
+                            <img src="./images/logo.png" data-src="./images/clip-206x177-4.png" width="60" height="51" alt="">
+                            <meta itemprop="image" content="./images/clip-206x177-4.png">
+                            <meta itemprop="width" content="60">
+                            <meta itemprop="height" content="51">
+                            <span class="label label__center label__play flex" data-frame="xSgT4ZtT5M0">
+                                <i class="fas fa-play"></i>
+                            </span>
+                        </a>
+                        <span class="figure__timer">3.15</span>
+                        <div class="figure__desc column">
+                            <div class="figure__title">
+                                <a href="#">Girls Have Fun ft. Rich The  Kid, G-Eazy</a>
+                                <meta itemprop="name" content="Girls Have Fun ft. Rich The  Kid, G-Eazy">
+                            </div>
+                            <span class="figure__text">Roddy Ricch • 2019</span>
+                        </div>
+                        <div class="figure__count flex">
+                            <i class="fas fa-eye"></i>
+                            600K
+                        </div>
+                    </div>
+                    <div class="figure figure__item__full flex__start" itemscope itemtype="http://schema.org/ImageObject">
+                        <span class="figure__number">5</span>
+                        <a href="#" rel="nofollow" class="figure__img">
+                            <img src="./images/logo.png" data-src="./images/clip-206x177-5.png" width="60" height="51" alt="">
+                            <meta itemprop="image" content="./images/clip-206x177-5.png">
+                            <meta itemprop="width" content="60">
+                            <meta itemprop="height" content="51">
+                            <span class="label label__center label__play flex" data-frame="xSgT4ZtT5M0">
+                                <i class="fas fa-play"></i>
+                            </span>
+                        </a>
+                        <span class="figure__timer">3.15</span>
+                        <div class="figure__desc column">
+                            <div class="figure__title">
+                                <a href="#">Girls Have Fun ft. Rich The  Kid, G-Eazy</a>
+                                <meta itemprop="name" content="Girls Have Fun ft. Rich The  Kid, G-Eazy">
+                            </div>
+                            <span class="figure__text">Roddy Ricch • 2019</span>
+                        </div>
+                        <div class="figure__count flex">
+                            <i class="fas fa-eye"></i>
+                            600K
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="figure__bottom flex__between border__top">
+                    <p>Музыкальные клипы <br> которые недавно попали в топ лучших</p>
+                    <a href="#" rel="nofollow" class="btn__next">Смотреть все</a>
+                </div>
+
+            </div>
+
+            <div class="sidebar__column border__top column">
+                <a href="#" rel="nofollow" class="title">Популярные зарубежные клипы 2015</a>
+                <div class="sidebar__figure column flex__between">
+                    <div class="figure figure__item__sidebar flex" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="#" rel="nofollow" class="figure__img">
+                            <img src="./images/logo.png" data-src="./images/clip-206x177-1.png" width="89" height="76" alt="">
+                            <meta itemprop="image" content="./images/clip-206x177-1.png">
+                            <meta itemprop="width" content="89">
+                            <meta itemprop="height" content="76">
+                            <span class="label label__bot label__play small flex" data-frame="xSgT4ZtT5M0">
+                                <i class="fas fa-play"></i>
+                            </span>
+                        </a>
+                        <div class="figure__desc column">
+                            <div class="figure__title">
+                                <a href="#">Girls Have Fun ft. Rich The  Kid, G-Eazy</a>
+                                <meta itemprop="name" content="Girls Have Fun ft. Rich The  Kid, G-Eazy">
+                            </div>
+                            <span class="figure__text">Roddy Ricch • 2019</span>
+                        </div>
+                    </div>
+                    <div class="figure figure__item__sidebar flex" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="#" rel="nofollow" class="figure__img">
+                            <img src="./images/logo.png" data-src="./images/clip-206x177-2.png" width="89" height="76" alt="">
+                            <meta itemprop="image" content="./images/clip-206x177-2.png">
+                            <meta itemprop="width" content="89">
+                            <meta itemprop="height" content="76">
+                            <span class="label label__bot label__play small flex" data-frame="xSgT4ZtT5M0">
+                                <i class="fas fa-play"></i>
+                            </span>
+                        </a>
+                        <div class="figure__desc column">
+                            <div class="figure__title">
+                                <a href="#">Girls Have Fun ft. Rich The  Kid, G-Eazy</a>
+                                <meta itemprop="name" content="Girls Have Fun ft. Rich The  Kid, G-Eazy">
+                            </div>
+                            <span class="figure__text">Roddy Ricch • 2019</span>
+                        </div>
+                    </div>
+                    <div class="figure figure__item__sidebar flex" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="#" rel="nofollow" class="figure__img">
+                            <img src="./images/logo.png" data-src="./images/clip-206x177-3.png" width="89" height="76" alt="">
+                            <meta itemprop="image" content="./images/clip-206x177-3.png">
+                            <meta itemprop="width" content="89">
+                            <meta itemprop="height" content="76">
+                            <span class="label label__bot label__play small flex" data-frame="xSgT4ZtT5M0">
+                                <i class="fas fa-play"></i>
+                            </span>
+                        </a>
+                        <div class="figure__desc column">
+                            <div class="figure__title">
+                                <a href="#">Girls Have Fun ft. Rich The  Kid, G-Eazy</a>
+                                <meta itemprop="name" content="Girls Have Fun ft. Rich The  Kid, G-Eazy">
+                            </div>
+                            <span class="figure__text">Roddy Ricch • 2019</span>
+                        </div>
+                    </div>
+                    <div class="figure figure__item__sidebar flex" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="#" rel="nofollow" class="figure__img">
+                            <img src="./images/logo.png" data-src="./images/clip-206x177-5.png" width="89" height="76" alt="">
+                            <meta itemprop="image" content="./images/clip-206x177-5.png">
+                            <meta itemprop="width" content="89">
+                            <meta itemprop="height" content="76">
+                            <span class="label label__bot label__play small flex" data-frame="xSgT4ZtT5M0">
+                                <i class="fas fa-play"></i>
+                            </span>
+                        </a>
+                        <div class="figure__desc column">
+                            <div class="figure__title">
+                                <a href="#">Girls Have Fun ft. Rich The  Kid, G-Eazy</a>
+                                <meta itemprop="name" content="Girls Have Fun ft. Rich The  Kid, G-Eazy">
+                            </div>
+                            <span class="figure__text">Roddy Ricch • 2019</span>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" rel="nofollow" class="btn__next">Смотреть все</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="double__row">
+        <div class="container flex flex__start">
+
+            <div class="double__wrap border__top">
+
+                <div class="figure__top flex__wrap flex__between">
+                    <h2 class="h2"><a href="#" rel="nofollow">Исполнители</a></h2>
+                    <a href="#" rel="nofollow" class="btn__next">Все исполнители</a>
+                </div>
+
+                <div class="figure__wrap flex__between flex__wrap">
+
+                    <div class="figure figure__item__circle column" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="#" rel="nofollow" class="figure__img">
+                            <img src="./images/logo.png" data-src="./images/actor_img.png" width="115" height="115" alt="">
+                            <meta itemprop="image" content="./images/actor_img.png">
+                            <meta itemprop="width" content="115">
+                            <meta itemprop="height" content="115">
+                        </a>
+                        <div class="figure__desc column">
+                            <div class="figure__title">
+                                <a href="#">Tyga</a>
+                                <meta itemprop="name" content="Tyga">
+                            </div>
+                            <span class="figure__text">Hip-hop, Rap</span>
+                        </div>
+                    </div>
+                    <div class="figure figure__item__circle column" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="#" rel="nofollow" class="figure__img">
+                            <img src="./images/logo.png" data-src="./images/actor_img.png" width="115" height="115" alt="">
+                            <meta itemprop="image" content="./images/actor_img.png">
+                            <meta itemprop="width" content="115">
+                            <meta itemprop="height" content="115">
+                        </a>
+                        <div class="figure__desc column">
+                            <div class="figure__title">
+                                <a href="#">Tyga</a>
+                                <meta itemprop="name" content="Tyga">
+                            </div>
+                            <span class="figure__text">Hip-hop, Rap</span>
+                        </div>
+                    </div>
+                    <div class="figure figure__item__circle column" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="#" rel="nofollow" class="figure__img">
+                            <img src="./images/logo.png" data-src="./images/actor_img.png" width="115" height="115" alt="">
+                            <meta itemprop="image" content="./images/actor_img.png">
+                            <meta itemprop="width" content="115">
+                            <meta itemprop="height" content="115">
+                        </a>
+                        <div class="figure__desc column">
+                            <div class="figure__title">
+                                <a href="#">Tyga</a>
+                                <meta itemprop="name" content="Tyga">
+                            </div>
+                            <span class="figure__text">Hip-hop, Rap</span>
+                        </div>
+                    </div>
+                    <div class="figure figure__item__circle column" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="#" rel="nofollow" class="figure__img">
+                            <img src="./images/logo.png" data-src="./images/actor_img.png" width="115" height="115" alt="">
+                            <meta itemprop="image" content="./images/actor_img.png">
+                            <meta itemprop="width" content="115">
+                            <meta itemprop="height" content="115">
+                        </a>
+                        <div class="figure__desc column">
+                            <div class="figure__title">
+                                <a href="#">Tyga</a>
+                                <meta itemprop="name" content="Tyga">
+                            </div>
+                            <span class="figure__text">Hip-hop, Rap</span>
+                        </div>
+                    </div>
+                    <div class="figure figure__item__circle column" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="#" rel="nofollow" class="figure__img">
+                            <img src="./images/logo.png" data-src="./images/actor_img.png" width="115" height="115" alt="">
+                            <meta itemprop="image" content="./images/actor_img.png">
+                            <meta itemprop="width" content="115">
+                            <meta itemprop="height" content="115">
+                        </a>
+                        <div class="figure__desc column">
+                            <div class="figure__title">
+                                <a href="#">Tyga</a>
+                                <meta itemprop="name" content="Tyga">
+                            </div>
+                            <span class="figure__text">Hip-hop, Rap</span>
+                        </div>
+                    </div>
+                    <div class="figure figure__item__circle column" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="#" rel="nofollow" class="figure__img">
+                            <img src="./images/logo.png" data-src="./images/actor_img.png" width="115" height="115" alt="">
+                            <meta itemprop="image" content="./images/actor_img.png">
+                            <meta itemprop="width" content="115">
+                            <meta itemprop="height" content="115">
+                        </a>
+                        <div class="figure__desc column">
+                            <div class="figure__title">
+                                <a href="#">Tyga</a>
+                                <meta itemprop="name" content="Tyga">
+                            </div>
+                            <span class="figure__text">Hip-hop, Rap</span>
+                        </div>
+                    </div>
+                    <div class="figure figure__item__circle column" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="#" rel="nofollow" class="figure__img">
+                            <img src="./images/logo.png" data-src="./images/actor_img.png" width="115" height="115" alt="">
+                            <meta itemprop="image" content="./images/actor_img.png">
+                            <meta itemprop="width" content="115">
+                            <meta itemprop="height" content="115">
+                        </a>
+                        <div class="figure__desc column">
+                            <div class="figure__title">
+                                <a href="#">Tyga</a>
+                                <meta itemprop="name" content="Tyga">
+                            </div>
+                            <span class="figure__text">Hip-hop, Rap</span>
+                        </div>
+                    </div>
+                    <div class="figure figure__item__circle column" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="#" rel="nofollow" class="figure__img">
+                            <img src="./images/logo.png" data-src="./images/actor_img.png" width="115" height="115" alt="">
+                            <meta itemprop="image" content="./images/actor_img.png">
+                            <meta itemprop="width" content="115">
+                            <meta itemprop="height" content="115">
+                        </a>
+                        <div class="figure__desc column">
+                            <div class="figure__title">
+                                <a href="#">Tyga</a>
+                                <meta itemprop="name" content="Tyga">
+                            </div>
+                            <span class="figure__text">Hip-hop, Rap</span>
+                        </div>
+                    </div>
+                    <div class="figure figure__item__circle column" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="#" rel="nofollow" class="figure__img">
+                            <img src="./images/logo.png" data-src="./images/actor_img.png" width="115" height="115" alt="">
+                            <meta itemprop="image" content="./images/actor_img.png">
+                            <meta itemprop="width" content="115">
+                            <meta itemprop="height" content="115">
+                        </a>
+                        <div class="figure__desc column">
+                            <div class="figure__title">
+                                <a href="#">Tyga</a>
+                                <meta itemprop="name" content="Tyga">
+                            </div>
+                            <span class="figure__text">Hip-hop, Rap</span>
+                        </div>
+                    </div>
+                    <div class="figure figure__item__circle column" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="#" rel="nofollow" class="figure__img">
+                            <img src="./images/logo.png" data-src="./images/actor_img.png" width="115" height="115" alt="">
+                            <meta itemprop="image" content="./images/actor_img.png">
+                            <meta itemprop="width" content="115">
+                            <meta itemprop="height" content="115">
+                        </a>
+                        <div class="figure__desc column">
+                            <div class="figure__title">
+                                <a href="#">Tyga</a>
+                                <meta itemprop="name" content="Tyga">
+                            </div>
+                            <span class="figure__text">Hip-hop, Rap</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="sidebar__column border__top column">
+                <a href="#" rel="nofollow" class="title">Популярные русские клипы 2019</a>
+                <div class="sidebar__figure column flex__between">
+                    <div class="figure figure__item__sidebar flex" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="#" rel="nofollow" class="figure__img">
+                            <img src="./images/logo.png" data-src="./images/clip-206x177-1.png" width="89" height="76" alt="">
+                            <meta itemprop="image" content="./images/clip-206x177-1.png">
+                            <meta itemprop="width" content="89">
+                            <meta itemprop="height" content="76">
+                            <span class="label label__bot label__play small flex" data-frame="xSgT4ZtT5M0">
+                                <i class="fas fa-play"></i>
+                            </span>
+                        </a>
+                        <div class="figure__desc column">
+                            <div class="figure__title">
+                                <a href="#">Girls Have Fun ft. Rich The  Kid, G-Eazy</a>
+                                <meta itemprop="name" content="Girls Have Fun ft. Rich The  Kid, G-Eazy">
+                            </div>
+                            <span class="figure__text">Roddy Ricch • 2019</span>
+                        </div>
+                    </div>
+                    <div class="figure figure__item__sidebar flex" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="#" rel="nofollow" class="figure__img">
+                            <img src="./images/logo.png" data-src="./images/clip-206x177-2.png" width="89" height="76" alt="">
+                            <meta itemprop="image" content="./images/clip-206x177-2.png">
+                            <meta itemprop="width" content="89">
+                            <meta itemprop="height" content="76">
+                            <span class="label label__bot label__play small flex" data-frame="xSgT4ZtT5M0">
+                                <i class="fas fa-play"></i>
+                            </span>
+                        </a>
+                        <div class="figure__desc column">
+                            <div class="figure__title">
+                                <a href="#">Girls Have Fun ft. Rich The  Kid, G-Eazy</a>
+                                <meta itemprop="name" content="Girls Have Fun ft. Rich The  Kid, G-Eazy">
+                            </div>
+                            <span class="figure__text">Roddy Ricch • 2019</span>
+                        </div>
+                    </div>
+                    <div class="figure figure__item__sidebar flex" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="#" rel="nofollow" class="figure__img">
+                            <img src="./images/logo.png" data-src="./images/clip-206x177-3.png" width="89" height="76" alt="">
+                            <meta itemprop="image" content="./images/clip-206x177-3.png">
+                            <meta itemprop="width" content="89">
+                            <meta itemprop="height" content="76">
+                            <span class="label label__bot label__play small flex" data-frame="xSgT4ZtT5M0">
+                                <i class="fas fa-play"></i>
+                            </span>
+                        </a>
+                        <div class="figure__desc column">
+                            <div class="figure__title">
+                                <a href="#">Girls Have Fun ft. Rich The  Kid, G-Eazy</a>
+                                <meta itemprop="name" content="Girls Have Fun ft. Rich The  Kid, G-Eazy">
+                            </div>
+                            <span class="figure__text">Roddy Ricch • 2019</span>
+                        </div>
+                    </div>
+                    <div class="figure figure__item__sidebar flex" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="#" rel="nofollow" class="figure__img">
+                            <img src="./images/logo.png" data-src="./images/clip-206x177-5.png" width="89" height="76" alt="">
+                            <meta itemprop="image" content="./images/clip-206x177-5.png">
+                            <meta itemprop="width" content="89">
+                            <meta itemprop="height" content="76">
+                            <span class="label label__bot label__play small flex" data-frame="xSgT4ZtT5M0">
+                                <i class="fas fa-play"></i>
+                            </span>
+                        </a>
+                        <div class="figure__desc column">
+                            <div class="figure__title">
+                                <a href="#">Girls Have Fun ft. Rich The  Kid, G-Eazy</a>
+                                <meta itemprop="name" content="Girls Have Fun ft. Rich The  Kid, G-Eazy">
+                            </div>
+                            <span class="figure__text">Roddy Ricch • 2019</span>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" rel="nofollow" class="btn__next">Смотреть все</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="double__row">
+        <div class="container flex flex__start">
+
+            <div class="double__wrap border__top">
+
+                <div class="figure__top flex__wrap flex__between">
+                    <h2 class="h2"><a href="#" rel="nofollow">Топ русских кипов</a></h2>
+                    <div class="flex">
+                        <span class="i i__video">50 видео</span>
+                        <span class="i i__star">4,8</span>
+                    </div>
+                </div>
+
+                <div class="figure__wrap column">
+
+                    <div class="figure figure__item__full flex__start" itemscope itemtype="http://schema.org/ImageObject">
+                        <span class="figure__number">1</span>
+                        <a href="#" rel="nofollow" class="figure__img">
+                            <img src="./images/logo.png" data-src="./images/clip-206x177-1.png" width="60" height="51" alt="">
+                            <meta itemprop="image" content="./images/clip-206x177-1.png">
+                            <meta itemprop="width" content="60">
+                            <meta itemprop="height" content="51">
+                            <span class="label label__center label__play flex" data-frame="xSgT4ZtT5M0">
+                                <i class="fas fa-play"></i>
+                            </span>
+                        </a>
+                        <span class="figure__timer">3.15</span>
+                        <div class="figure__desc column">
+                            <div class="figure__title">
+                                <a href="#">Girls Have Fun ft. Rich The  Kid, G-Eazy</a>
+                                <meta itemprop="name" content="Girls Have Fun ft. Rich The  Kid, G-Eazy">
+                            </div>
+                            <span class="figure__text">Roddy Ricch • 2019</span>
+                        </div>
+                        <div class="figure__count flex">
+                            <i class="fas fa-eye"></i>
+                            600K
+                        </div>
+                    </div>
+                    <div class="figure figure__item__full flex__start" itemscope itemtype="http://schema.org/ImageObject">
+                        <span class="figure__number">2</span>
+                        <a href="#" rel="nofollow" class="figure__img">
+                            <img src="./images/logo.png" data-src="./images/clip-206x177-2.png" width="60" height="51" alt="">
+                            <meta itemprop="image" content="./images/clip-206x177-2.png">
+                            <meta itemprop="width" content="60">
+                            <meta itemprop="height" content="51">
+                            <span class="label label__center label__play flex" data-frame="xSgT4ZtT5M0">
+                                <i class="fas fa-play"></i>
+                            </span>
+                        </a>
+                        <span class="figure__timer">3.15</span>
+                        <div class="figure__desc column">
+                            <div class="figure__title">
+                                <a href="#">Girls Have Fun ft. Rich The  Kid, G-Eazy</a>
+                                <meta itemprop="name" content="Girls Have Fun ft. Rich The  Kid, G-Eazy">
+                            </div>
+                            <span class="figure__text">Roddy Ricch • 2019</span>
+                        </div>
+                        <div class="figure__count flex">
+                            <i class="fas fa-eye"></i>
+                            600K
+                        </div>
+                    </div>
+                    <div class="figure figure__item__full flex__start" itemscope itemtype="http://schema.org/ImageObject">
+                        <span class="figure__number">3</span>
+                        <a href="#" rel="nofollow" class="figure__img">
+                            <img src="./images/logo.png" data-src="./images/clip-206x177-3.png" width="60" height="51" alt="">
+                            <meta itemprop="image" content="./images/clip-206x177-3.png">
+                            <meta itemprop="width" content="60">
+                            <meta itemprop="height" content="51">
+                            <span class="label label__center label__play flex" data-frame="xSgT4ZtT5M0">
+                                <i class="fas fa-play"></i>
+                            </span>
+                        </a>
+                        <span class="figure__timer">3.15</span>
+                        <div class="figure__desc column">
+                            <div class="figure__title">
+                                <a href="#">Girls Have Fun ft. Rich The  Kid, G-Eazy</a>
+                                <meta itemprop="name" content="Girls Have Fun ft. Rich The  Kid, G-Eazy">
+                            </div>
+                            <span class="figure__text">Roddy Ricch • 2019</span>
+                        </div>
+                        <div class="figure__count flex">
+                            <i class="fas fa-eye"></i>
+                            600K
+                        </div>
+                    </div>
+                    <div class="figure figure__item__full flex__start" itemscope itemtype="http://schema.org/ImageObject">
+                        <span class="figure__number">4</span>
+                        <a href="#" rel="nofollow" class="figure__img">
+                            <img src="./images/logo.png" data-src="./images/clip-206x177-4.png" width="60" height="51" alt="">
+                            <meta itemprop="image" content="./images/clip-206x177-4.png">
+                            <meta itemprop="width" content="60">
+                            <meta itemprop="height" content="51">
+                            <span class="label label__center label__play flex" data-frame="xSgT4ZtT5M0">
+                                <i class="fas fa-play"></i>
+                            </span>
+                        </a>
+                        <span class="figure__timer">3.15</span>
+                        <div class="figure__desc column">
+                            <div class="figure__title">
+                                <a href="#">Girls Have Fun ft. Rich The  Kid, G-Eazy</a>
+                                <meta itemprop="name" content="Girls Have Fun ft. Rich The  Kid, G-Eazy">
+                            </div>
+                            <span class="figure__text">Roddy Ricch • 2019</span>
+                        </div>
+                        <div class="figure__count flex">
+                            <i class="fas fa-eye"></i>
+                            600K
+                        </div>
+                    </div>
+                    <div class="figure figure__item__full flex__start" itemscope itemtype="http://schema.org/ImageObject">
+                        <span class="figure__number">5</span>
+                        <a href="#" rel="nofollow" class="figure__img">
+                            <img src="./images/logo.png" data-src="./images/clip-206x177-5.png" width="60" height="51" alt="">
+                            <meta itemprop="image" content="./images/clip-206x177-5.png">
+                            <meta itemprop="width" content="60">
+                            <meta itemprop="height" content="51">
+                            <span class="label label__center label__play flex" data-frame="xSgT4ZtT5M0">
+                                <i class="fas fa-play"></i>
+                            </span>
+                        </a>
+                        <span class="figure__timer">3.15</span>
+                        <div class="figure__desc column">
+                            <div class="figure__title">
+                                <a href="#">Girls Have Fun ft. Rich The  Kid, G-Eazy</a>
+                                <meta itemprop="name" content="Girls Have Fun ft. Rich The  Kid, G-Eazy">
+                            </div>
+                            <span class="figure__text">Roddy Ricch • 2019</span>
+                        </div>
+                        <div class="figure__count flex">
+                            <i class="fas fa-eye"></i>
+                            600K
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="figure__bottom flex__between border__top">
+                    <p>Музыкальные клипы <br> которые недавно попали в топ лучших</p>
+                    <a href="#" rel="nofollow" class="btn__next">Смотреть все</a>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="figure__row">
+        <div class="container">
+
+            <div class="figure__top flex flex__between">
+                <h2 class="h2"><a href="#" rel="nofollow">Другие рейтинги клипов</a></h2>
+            </div>
+
+            <div class="figure__wrap flex flex__wrap">
+                <div class="figure figure__item__big column" itemscope itemtype="http://schema.org/ImageObject">
+                    <a href="#" rel="nofollow" class="figure__img">
+                        <img src="./images/logo.png" data-src="./images/clip-206x177-1.png" width="350" height="292" alt="">
+                        <meta itemprop="image" content="./images/clip-206x177-1.png">
+                        <meta itemprop="width" content="350">
+                        <meta itemprop="height" content="292">
+                        <meta itemprop="name" content="TOP POP">
+                        <span class="label__orange">TOP POP</span>
+                        <span class="label__link btn__next">Перейти</span>
+                        <div class="label__img flex">
+                            <img src="./images/clip-206x177-1.png" alt="">
+                            <div class="column">
+                                <span>Girls Have Fun ft. Rich The  Kid, G-Eazy</span>
+                                <span>Roddy Ricch & Kenny Beats</span>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="figure__desc flex__between">
+                        <span class="i i__video">50 видео</span>
+                        <span class="i i__eye flex">12 009</span>
+                        <span class="i i__star">4,8</span>
+                    </div>
+                </div>
+                <div class="figure figure__item__big column" itemscope itemtype="http://schema.org/ImageObject">
+                    <a href="#" rel="nofollow" class="figure__img">
+                        <img src="./images/logo.png" data-src="./images/clip-206x177-1.png" width="350" height="292" alt="">
+                        <meta itemprop="image" content="./images/clip-206x177-1.png">
+                        <meta itemprop="width" content="350">
+                        <meta itemprop="height" content="292">
+                        <meta itemprop="name" content="TOP POP">
+                        <span class="label__orange">TOP POP</span>
+                        <span class="label__link btn__next">Перейти</span>
+                        <div class="label__img flex">
+                            <img src="./images/clip-206x177-1.png" alt="">
+                            <div class="column">
+                                <span>Girls Have Fun ft. Rich The  Kid, G-Eazy</span>
+                                <span>Roddy Ricch & Kenny Beats</span>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="figure__desc flex__between">
+                        <span class="i i__video">50 видео</span>
+                        <span class="i i__eye flex">12 009</span>
+                        <span class="i i__star">4,8</span>
+                    </div>
+                </div>
+                <div class="figure figure__item__big column" itemscope itemtype="http://schema.org/ImageObject">
+                    <a href="#" rel="nofollow" class="figure__img">
+                        <img src="./images/logo.png" data-src="./images/clip-206x177-1.png" width="350" height="292" alt="">
+                        <meta itemprop="image" content="./images/clip-206x177-1.png">
+                        <meta itemprop="width" content="350">
+                        <meta itemprop="height" content="292">
+                        <meta itemprop="name" content="TOP POP">
+                        <span class="label__orange">TOP POP</span>
+                        <span class="label__link btn__next">Перейти</span>
+                        <div class="label__img flex">
+                            <img src="./images/clip-206x177-1.png" alt="">
+                            <div class="column">
+                                <span>Girls Have Fun ft. Rich The  Kid, G-Eazy</span>
+                                <span>Roddy Ricch & Kenny Beats</span>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="figure__desc flex__between">
+                        <span class="i i__video">50 видео</span>
+                        <span class="i i__eye flex">12 009</span>
+                        <span class="i i__star">4,8</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="figure__row">
+        <div class="container">
+
+            <div class="figure__top flex__wrap flex__between">
+                <h2 class="h2"><a href="#" rel="nofollow">Вы просматривали</a></h2>
+                <a href="#" rel="nofollow" class="btn__next">Смотреть все</a>
+            </div>
+
+            <div class="figure__wrap flex__between flex__wrap">
+                <div class="figure figure__item column" itemscope itemtype="http://schema.org/ImageObject">
+                    <a href="#" rel="nofollow" class="figure__img">
+                        <img src="./images/logo.png" data-src="./images/clip-206x177-1.png" width="206" height="177" alt="">
+                        <meta itemprop="image" content="./images/clip-206x177-1.png">
+                        <meta itemprop="width" content="206">
+                        <meta itemprop="height" content="177">
+                        <span class="label label__top flex">
+                            <i class="fas fa-fire"></i>
+                        </span>
+                        <span class="label label__bot label__play flex" data-frame="xSgT4ZtT5M0">
+                            <i class="fas fa-play"></i>
+                        </span>
+                    </a>
+                    <div class="figure__desc column">
+                        <div class="figure__title">
+                            <a href="#">Girls Have Fun ft. Rich The  Kid, G-Eazy</a>
+                            <meta itemprop="name" content="Girls Have Fun ft. Rich The  Kid, G-Eazy">
+                        </div>
+                        <span class="figure__text">Roddy Ricch • 2019</span>
+                    </div>
+                </div>
+                <div class="figure figure__item column" itemscope itemtype="http://schema.org/ImageObject">
+                    <a href="#" rel="nofollow" class="figure__img">
+                        <img src="./images/logo.png" data-src="./images/clip-206x177-2.png" width="206" height="177" alt="">
+                        <meta itemprop="image" content="./images/clip-206x177-2.png">
+                        <meta itemprop="width" content="206">
+                        <meta itemprop="height" content="177">
+                        <span class="label label__top flex">
+                            <i class="fas fa-fire"></i>
+                        </span>
+                        <span class="label label__bot label__play flex" data-frame="xSgT4ZtT5M0">
+                            <i class="fas fa-play"></i>
+                        </span>
+                    </a>
+                    <div class="figure__desc column">
+                        <div class="figure__title">
+                            <a href="#">Girls Have Fun ft. Rich The  Kid, G-Eazy</a>
+                            <meta itemprop="name" content="Girls Have Fun ft. Rich The  Kid, G-Eazy">
+                        </div>
+                        <span class="figure__text">Roddy Ricch • 2019</span>
+                    </div>
+                </div>
+                <div class="figure figure__item column" itemscope itemtype="http://schema.org/ImageObject">
+                    <a href="#" rel="nofollow" class="figure__img">
+                        <img src="./images/logo.png" data-src="./images/clip-206x177-3.png" width="206" height="177" alt="">
+                        <meta itemprop="image" content="./images/clip-206x177-3.png">
+                        <meta itemprop="width" content="206">
+                        <meta itemprop="height" content="177">
+                        <span class="label label__top flex">
+                            <i class="fas fa-fire"></i>
+                        </span>
+                        <span class="label label__bot label__play flex" data-frame="xSgT4ZtT5M0">
+                            <i class="fas fa-play"></i>
+                        </span>
+                    </a>
+                    <div class="figure__desc column">
+                        <div class="figure__title">
+                            <a href="#">Girls Have Fun ft. Rich The  Kid, G-Eazy</a>
+                            <meta itemprop="name" content="Girls Have Fun ft. Rich The  Kid, G-Eazy">
+                        </div>
+                        <span class="figure__text">Roddy Ricch • 2019</span>
+                    </div>
+                </div>
+                <div class="figure figure__item column" itemscope itemtype="http://schema.org/ImageObject">
+                    <a href="#" rel="nofollow" class="figure__img">
+                        <img src="./images/logo.png" data-src="./images/clip-206x177-4.png" width="206" height="177" alt="">
+                        <meta itemprop="image" content="./images/clip-206x177-4.png">
+                        <meta itemprop="width" content="206">
+                        <meta itemprop="height" content="177">
+                        <span class="label label__top flex">
+                            <i class="fas fa-fire"></i>
+                        </span>
+                        <span class="label label__bot label__play flex" data-frame="xSgT4ZtT5M0">
+                            <i class="fas fa-play"></i>
+                        </span>
+                    </a>
+                    <div class="figure__desc column">
+                        <div class="figure__title">
+                            <a href="#">Girls Have Fun ft. Rich The  Kid, G-Eazy</a>
+                            <meta itemprop="name" content="Girls Have Fun ft. Rich The  Kid, G-Eazy">
+                        </div>
+                        <span class="figure__text">Roddy Ricch • 2019</span>
+                    </div>
+                </div>
+                <div class="figure figure__item column" itemscope itemtype="http://schema.org/ImageObject">
+                    <a href="#" rel="nofollow" class="figure__img">
+                        <img src="./images/logo.png" data-src="./images/clip-206x177-5.png" width="206" height="177" alt="">
+                        <meta itemprop="image" content="./images/clip-206x177-5.png">
+                        <meta itemprop="width" content="206">
+                        <meta itemprop="height" content="177">
+                        <span class="label label__top flex">
+                            <i class="fas fa-fire"></i>
+                        </span>
+                        <span class="label label__bot label__play flex" data-frame="xSgT4ZtT5M0">
+                            <i class="fas fa-play"></i>
+                        </span>
+                    </a>
+                    <div class="figure__desc column">
+                        <div class="figure__title">
+                            <a href="#">Girls Have Fun ft. Rich The  Kid, G-Eazy</a>
+                            <meta itemprop="name" content="Girls Have Fun ft. Rich The  Kid, G-Eazy">
+                        </div>
+                        <span class="figure__text">Roddy Ricch • 2019</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+<div class="frame__modal column">
+    <div id="frame"></div>
+    <div class="frame__info flex flex__between">
+        <div class="column">
+            <span class="gray">Сейчас воспроизводится</span>
+            <span class="frame__name">Популярные клипы Tyga</span>
+        </div>
+        <div class="frame__close flex">
+            Закрыть
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="foot__top">
+        <div class="container flex flex__start">
+            <div class="foot__logo" itemscope itemtype="http://schema.org/Organization">
+                <a itemprop="url" href="/">
+                    <img itemprop="logo" src="/images/logo-light.png" alt="logo">
+                </a>
+                <meta itemprop="name" content="NAME">
+                <meta itemprop="address" content="ADDRESS">
+                <meta itemprop="telephone" content="TELEPHONE">
+            </div>
+            <nav class="foot__nav flex" itemscope="" itemtype="http://schema.org/SiteNavigationElement">
+                <ul class="flex__between" itemprop="about" itemscope="" itemtype="http://schema.org/ItemList">
+                    <li itemprop="itemListElement">
+                        <a href="#" itemprop="url">Стол заказов</a>
+                        <meta itemprop="name" content="Стол заказов" />
+                    </li>
+                    <li itemprop="itemListElement">
+                        <a href="#" itemprop="url">Карта сайта</a>
+                        <meta itemprop="name" content="Карта сайта" />
+                    </li>
+                    <li itemprop="itemListElement">
+                        <a href="#" itemprop="url">Контакты</a>
+                        <meta itemprop="name" content="Контакты" />
+                    </li>
+                    <li itemprop="itemListElement">
+                        <a href="#" itemprop="url">Правообладателям</a>
+                        <meta itemprop="name" content="Правообладателям" />
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+    </div>
+    <div class="foot__bottom ">
+        <div class="container flex flex__between">
+            <span class="foot__copy">© 2019 Topklip.ru</span>
+            <span class="foot__small"> Сайт может содержать контент, не предназначенный для лиц младше 18 лет</span>
+        </div>
+    </div>
+</footer>
+
+<link rel="stylesheet" href="/css/libs.min.css">
+<link rel="stylesheet" href="/css/jquery.fancybox.min.css">
+<link rel="stylesheet" href="/css/slick.css">
+<link rel="stylesheet" href="/css/slick-theme.css">
+<link rel="stylesheet" href="/css/fontawesome.css">
+<link rel="stylesheet" href="/css/loader.css">
+<link rel="stylesheet" href="/css/main.min.css">
+
+<script src="/js/jquery.min.js"></script>
+<script src="/js/jquery.fancybox.min.js"></script>
+<script src="/js/slick.min.js"></script>
+<script src="/js/jquery.lazy.js"></script>
+<script src="/js/jquery.draggable.min.js"></script>
+<script src="/js/common.js"></script>
+
+</body>
+
+</html>
+
+
+
+

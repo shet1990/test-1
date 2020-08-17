@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <meta charset="utf-8">
+    <!-- <base href="/"> -->
+
+    <title>Title</title>
+    <meta name="description" content="">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Template Basic Images Start -->
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="icon" href="images/favicon/favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/favicon.png">
+    <!-- Template Basic Images End -->
+
+    <!-- Custom Browsers Color Start -->
+    <meta name="theme-color" content="#000">
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebSite">
+
+<header>
+    <div class="container column">
+        <div class="head__top flex flex__between">
+            <div class="head__logo" itemscope itemtype="http://schema.org/Organization">
+                <a itemprop="url" href="/">
+                    <img itemprop="logo" src="/images/logo.png" alt="logo">
+                </a>
+                <meta itemprop="name" content="NAME">
+                <meta itemprop="address" content="ADDRESS">
+                <meta itemprop="telephone" content="TELEPHONE">
+            </div>
+            <span class="head__desc">Бесплатно смотреть клипы по всем жанрам и исполнителям</span>
+            <div class="spacer"></div>
+            <form action="/" class="head__search flex" itemprop="potentialAction" itemscope="" itemtype="https://schema.org/SearchAction">
+                <meta itemprop="target" content="/search/{query}">
+                <link itemprop="url" href="http://www.example.com/"/>
+                <div class="input__search">
+                    <input type="text" placeholder="Найти клипы" itemprop="query">
+                </div>
+                <div class="select__wrap select__search">
+                    <div class="select__tab">
+                        <span>По исполнителю</span>
+                    </div>
+                    <ul class="one__option select__hide">
+                        <li class="is-active" data-val="author">По исполнителю</li>
+                        <li data-val="name">По названию</li>
+                        <li data-val="date">По дате</li>
+                    </ul>
+                    <input name="cat" type="hidden" value="">
+                </div>
+                <input type="submit" value="Искать!" class="submit__search">
+            </form>
+            <div class="my__hamburger">
+                <div class="hamburger__block">
+                    <div class="hamburger__top"></div>
+                    <div class="hamburger__bottom"></div>
+                </div>
+            </div>
+        </div>
+        <nav class="head__nav flex" itemscope="" itemtype="http://schema.org/SiteNavigationElement">
+            <ul class="flex__between flex__wrap" itemprop="about" itemscope="" itemtype="http://schema.org/ItemList">
+                <li class="i i__home" itemprop="itemListElement">
+                    <a href="#" itemprop="url">Главная</a>
+                    <meta itemprop="name" content="Главная" />
+                </li>
+                <li class="i i__fire" itemprop="itemListElement">
+                    <a href="#" itemprop="url">Популярные клипы</a>
+                    <meta itemprop="name" content="Популярные клипы" />
+                </li>
+                <li class="i i__bold" itemprop="itemListElement">
+                    <a href="#" itemprop="url">Новые клипы</a>
+                    <meta itemprop="name" content="Новые клипы" />
+                </li>
+                <li class="menu-item-has-children" itemprop="itemListElement">
+                    <a href="#" itemprop="url">Жанры</a>
+                    <meta itemprop="name" content="Жанры" />
+
+                    <ul class="sub-menu" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ItemList">
+                        <li itemprop="itemListElement">
+                            <a href="#" itemprop="url">R`N`B</a>
+                            <meta itemprop="name" content="R`N`B" />
+                        </li>
+                        <li itemprop="itemListElement">
+                            <a href="#" itemprop="url">Pop</a>
+                            <meta itemprop="name" content="Pop" />
+                        </li>
+                        <li itemprop="itemListElement">
+                            <a href="#" itemprop="url">Rock</a>
+                            <meta itemprop="name" content="Rock" />
+                        </li>
+                        <li itemprop="itemListElement">
+                            <a href="#" itemprop="url">Electronic</a>
+                            <meta itemprop="name" content="Electronic" />
+                        </li>
+                        <li itemprop="itemListElement">
+                            <a href="#" itemprop="url">Hip-hop & Rap</a>
+                            <meta itemprop="name" content="Hip-hop & Rap" />
+                        </li>
+                    </ul>
+                </li>
+                <li itemprop="itemListElement">
+                    <a href="#" itemprop="url">Исполнители</a>
+                    <meta itemprop="name" content="Исполнители" />
+                </li>
+                <li itemprop="itemListElement">
+                    <a href="#" itemprop="url">Страны</a>
+                    <meta itemprop="name" content="Страны" />
+                </li>
+                <li itemprop="itemListElement">
+                    <a href="#" itemprop="url">Американские клипы</a>
+                    <meta itemprop="name" content="Американские клипы" />
+                </li>
+                <li itemprop="itemListElement">
+                    <a href="#" itemprop="url">Русские клипы</a>
+                    <meta itemprop="name" content="Русские клипы" />
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <style>
+        .link {
+            padding-bottom: 100px;
+        }
+        .link a{
+            margin-bottom: 20px;
+            font-size: 20px;
+        }
+    </style>
+
+    <div class="container column link">
+        <a href="/home.html">Home</a>
+        <a href="/actor.html">Страница исполнителя</a>
+        <a href="/filter.html">Фильтер исполнителей</a>
+        <a href="/text.html">Текстовая страница</a>
+        <a href="/janr-all.html">Жанры обзор</a>
+        <a href="/janr.html">Жанр</a>
+        <a href="/top.html">Топ </a>
+        <a href="/clip.html">Клип </a>
+        <a href="/new.html">Хэдер и футер </a>
+    </div>
+
+
+</main>
+
+<div class="frame__modal column">
+    <div id="frame"></div>
+    <div class="frame__info flex flex__between">
+        <div class="column">
+            <span class="gray">Сейчас воспроизводится</span>
+            <span class="frame__name">Популярные клипы Tyga</span>
+        </div>
+        <div class="frame__close flex">
+            Закрыть
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="foot__top">
+        <div class="container flex flex__start">
+            <div class="foot__logo" itemscope itemtype="http://schema.org/Organization">
+                <a itemprop="url" href="/">
+                    <img itemprop="logo" src="/images/logo-light.png" alt="logo">
+                </a>
+                <meta itemprop="name" content="NAME">
+                <meta itemprop="address" content="ADDRESS">
+                <meta itemprop="telephone" content="TELEPHONE">
+            </div>
+            <nav class="foot__nav flex" itemscope="" itemtype="http://schema.org/SiteNavigationElement">
+                <ul class="flex__between" itemprop="about" itemscope="" itemtype="http://schema.org/ItemList">
+                    <li itemprop="itemListElement">
+                        <a href="#" itemprop="url">Стол заказов</a>
+                        <meta itemprop="name" content="Стол заказов" />
+                    </li>
+                    <li itemprop="itemListElement">
+                        <a href="#" itemprop="url">Карта сайта</a>
+                        <meta itemprop="name" content="Карта сайта" />
+                    </li>
+                    <li itemprop="itemListElement">
+                        <a href="#" itemprop="url">Контакты</a>
+                        <meta itemprop="name" content="Контакты" />
+                    </li>
+                    <li itemprop="itemListElement">
+                        <a href="#" itemprop="url">Правообладателям</a>
+                        <meta itemprop="name" content="Правообладателям" />
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+    </div>
+    <div class="foot__bottom ">
+        <div class="container flex flex__between">
+            <span class="foot__copy">© 2019 Topklip.ru</span>
+            <span class="foot__small"> Сайт может содержать контент, не предназначенный для лиц младше 18 лет</span>
+        </div>
+    </div>
+</footer>
+
+<link rel="stylesheet" href="/css/libs.min.css">
+<link rel="stylesheet" href="/css/jquery.fancybox.min.css">
+<link rel="stylesheet" href="/css/slick.css">
+<link rel="stylesheet" href="/css/slick-theme.css">
+<link rel="stylesheet" href="/css/fontawesome.css">
+<link rel="stylesheet" href="/css/loader.css">
+<link rel="stylesheet" href="/css/main.min.css">
+
+<script src="/js/jquery.min.js"></script>
+<script src="/js/jquery.fancybox.min.js"></script>
+<script src="/js/slick.min.js"></script>
+<script src="/js/jquery.lazy.js"></script>
+<script src="/js/jquery.draggable.min.js"></script>
+<script src="/js/common.js"></script>
+
+</body>
+
+</html>

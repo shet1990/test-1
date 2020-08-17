@@ -1,0 +1,1548 @@
+@import "vars"
+@import "fonts"
+
+::placeholder
+  color: $gray
+
+::selection
+  background-color: $bg-gray
+  color: $gray
+
+html
+  overflow-x: hidden
+  background-color: #fff
+
+body
+  font-family: $default-font
+  font-size: $default-size
+  font-weight: $default-weight
+  color: $default-color
+  min-width: 320px
+  position: relative
+  line-height: 1.1
+  overflow-x: hidden
+  opacity: 1
+
+  select
+    background-color: $bg-gray
+    outline: none
+    appearance: none
+
+  input, textarea, .mob-select
+    background-color: $bg-gray
+    font-size: 14px
+    border-radius: $radius
+    color: $gray
+    padding: 0 16px
+    border: none
+    height: 40px
+    display: flex
+    align-items: center
+    outline: none
+    appearance: none
+
+  a
+    text-decoration: none
+    color: $default-color
+
+    &:hover
+      color: $default-color
+
+b, strong, .b
+  font-weight: bold
+.ital
+  font-style: italic
+
+ul
+  list-style-type: none
+  margin: 0
+  padding: 0
+
+.flex
+  display: flex
+  align-items: center
+  justify-content: center
+
+.column
+  display: flex
+  flex-direction: column
+
+.flex__start
+  display: flex
+  align-items: flex-start
+  justify-content: flex-start
+
+.flex__between
+  display: flex
+  justify-content: space-between
+
+.flex__wrap
+  flex-wrap: wrap
+
+.container
+  padding: $container-padding
+  margin: 0 auto
+  max-width: $max-width
+  width: 100%
+  height: 100%
+
+.bg__cover
+  background-position: center
+  background-repeat: no-repeat
+  background-size: cover
+
+.bg__contain
+  background-position: center
+  background-repeat: no-repeat
+  background-size: contain
+
+//hamburger
+.my__hamburger
+  cursor: pointer
+  display: none
+  width: 24px
+  height: 24px
+  .hamburger__block
+    position: relative
+    height: 100%
+    .hamburger__top
+      top: 6px
+    .hamburger__bottom
+      top: 16px
+  .hamburger__top, .hamburger__bottom
+    position: absolute
+    transition: top .3s cubic-bezier(0.04, 0.04, 0.12, 1) .2999s,transform .1s cubic-bezier(0.04, 0.04, 0.12, 1)
+    width: 24px
+    height: 2px
+    background-color: #4A4A4A
+    border-radius: 2px
+  &.is-active
+    .hamburger__block
+      .hamburger__top, .hamburger__bottom
+        transition: top .3s cubic-bezier(0.04, 0.04, 0.12, 1),transform .1s cubic-bezier(0.04, 0.04, 0.12, 1) .29999s
+      .hamburger__top
+        top: 11px
+        transform: rotate(45deg)
+      .hamburger__bottom
+        top: 11px
+        transform: rotate(-45deg)
+.spacer
+  width: 100%
+
+.title
+  font-size: 18px
+  font-weight: bold
+
+.h1, h1
+  font-size: 28px
+  font-weight: bold
+
+.h2, h2
+  font-size: 24px
+  font-weight: bold
+  margin-bottom: 24px
+  .i
+    margin-left: 12px
+.is-disable
+  pointer-events: none
+  opacity: 0.5
+.i
+  margin-bottom: 10px
+  position: relative
+  white-space: nowrap
+  &:before
+    font-family: 'Font Awesome 5 Free'
+    margin-right: 5px
+  &__top
+    &:before
+      content: "\f885"
+      color: $blue
+  &__fire
+    &:before
+      content: "\f06d"
+      color: $red
+  &__bold
+    &:before
+      content: "\f0e7"
+      color: $yellow
+  &__glass
+    &:before
+      content: "\f79f"
+      color: $yellow
+  &__home
+    &:before
+      content: "\f012"
+      color: $blue
+  &__star
+    color: $gray
+    font-size: 14px
+    &:before
+      content: "\f005"
+      color: $yellow
+  &__video
+    color: $gray
+    font-size: 14px
+    &:before
+      content: "\f03d"
+  &__eye
+    color: $gray
+    font-size: 14px
+    &:before
+      content: "\f06e"
+  &__like
+    cursor: pointer
+    color: $blue
+    font-size: 14px
+    font-weight: normal
+    &:before
+      content: "\f164"
+  &__dislike
+    cursor: pointer
+    color: $gray
+    font-size: 14px
+    font-weight: normal
+    &:before
+      position: relative
+      top: 2px
+      content: "\f165"
+  &__comment
+    color: $gray
+    font-size: 16px
+    font-weight: normal
+    margin-bottom: 12px
+    &:before
+      content: "\f075"
+  &__reply
+    cursor: pointer
+    color: $gray
+    font-size: 14px
+    font-weight: normal
+    &:before
+      content: "\f3e5"
+
+.blue
+  color: $blue
+
+.yellow
+  color: $yellow
+
+.red
+  color: $red
+
+.btn
+  &__gray
+    display: inline-block
+    font-size: 14px
+    color: $gray
+    font-weight: 600
+    padding: 8px 6px
+    border-radius: $radius
+    background-color: $bg-gray
+    transition: $all5
+    cursor: pointer
+    &:hover, &.is-active
+      color: #ffffff
+      background-color: #000000
+  &__next
+    font-size: 14px
+    color: $blue
+    cursor: pointer
+    &:after
+      transition: $all5
+      position: relative
+      right: -5px
+      top: 1px
+      font-family: 'Font Awesome 5 Free'
+      content: "\f105"
+    &:hover
+      color: $blue
+      text-decoration: none
+      &:after
+        right: -10px
+  &__blue
+    display: inline-block
+    padding: 8px 14px 8px 6px
+    border-radius: $radius
+    border: 1px solid $blue
+    text-align: center
+    cursor: pointer
+  &__border
+    display: inline-block
+    padding: 2px 8px
+    border-radius: $radius
+    border: 1px solid $gray
+    text-align: center
+    color: $gray
+    cursor: pointer
+  &__download
+    color: $blue
+    cursor: pointer
+    border-bottom: 2px solid $blue
+
+.select__wrap
+  position: relative
+  display: flex
+  flex: 0 0 auto
+  font-size: 14px
+  font-weight: normal
+  border-radius: $radius
+  padding: 8px 24px 8px 10px
+  &.gray
+    border: 1px solid $bg-gray
+    color: $gray
+  &.blue
+    color: #ffffff
+    background-color: $blue
+  .select__tab
+    &:after
+      content: "\f0d7"
+  &.is-active
+    .select__tab:after
+      top: -1px
+      transform: rotate(180deg)
+  &.select__search
+    min-width: 160px
+    border-left: 1px solid $gray
+    border-radius: 0
+    color: $gray
+    .select__tab
+      width: 100%
+      &:after
+        color: $blue
+        content: "\f107"
+
+.select__tab
+  cursor: pointer
+  position: relative
+  &:after
+    font-family: 'Font Awesome 5 Free'
+    position: absolute
+    right: -15px
+    top: 0px
+    transition: $all5
+
+.one__option
+  display: none
+  overflow: hidden
+  top: 32px
+  left: 0
+  position: absolute
+  width: 100%
+  background-color: #ffffff
+  z-index: 1
+  border-radius: $radius
+  border: 1px solid $gray
+  color: $gray
+  padding: 10px
+  li
+    transition: $all5
+    cursor: pointer
+    margin-bottom: 10px
+    &:last-child
+      margin-bottom: 0
+    &:hover, &.is-active
+      color: $blue
+
+.multi__option
+  padding: 10px
+  top: 32px
+  display: none
+  left: 0
+  z-index: 2
+  position: absolute
+  background: #fff
+  width: auto
+  border: 1px solid $bg-gray
+  border-radius: $radius
+  span
+    color: $gray
+  .option
+    margin-bottom: 10px
+    line-height: 20px
+    &:last-child
+      margin-bottom: 0
+
+.checkbox__wrap
+  align-items: center
+  span
+    color: $gray
+    white-space: nowrap
+.checkbox
+  position: relative
+  width: 20px
+  height: 20px
+  margin-right: 10px
+  input, .checkmark
+    cursor: pointer
+    position: absolute
+    top: 0
+    left: 0
+    width: 20px!important
+    height: 20px
+  input
+    z-index: 2
+    opacity: 0
+  .checkmark
+    background: #ffffff
+    border-radius: $radius
+    border: 1px solid $gray
+    margin-right: 10px
+  .checkmark:after
+    font-family: 'Font Awesome 5 Free'
+    color: $blue
+    position: absolute
+    content: "\f00c"
+    display:  none
+    left: 2px
+    top: 0px
+  input:checked ~ .checkmark:after
+    display: block
+
+header
+  border-bottom: 1px solid $gray
+  margin-bottom: 32px
+.head
+  &__top
+    height: 66px
+  &__logo
+    margin-right: 30px
+  &__desc
+    font-size: 14px
+    color: $gray
+    min-width: 220px
+  &__search
+    background-color: $bg-gray
+    border-radius: $radius
+    height: 40px
+  &__nav
+    height: 64px
+    &>ul
+      width: 100%
+      font-weight: 600
+      &>li
+        margin-bottom: 10px
+        &.menu-item-has-children
+          position: relative
+          &>a
+            &:after
+              font-family: 'Font Awesome 5 Free'
+              content: "\f0d7"
+              margin-left: 5px
+          &:hover
+            .sub-menu
+              z-index: 10
+              display: block
+    .sub-menu
+      display: none
+      padding: 10px
+      position: absolute
+      top: 16px
+      left: 0
+      background-color: #fff
+      font-size: 14px
+      white-space: nowrap
+      li
+        margin-bottom: 10px
+        &:last-child
+          margin-bottom: 0
+
+.submit__search
+  color: #ffffff
+  background-color: $blue
+  cursor: pointer
+.input__search
+  position: relative
+  padding-left: 18px
+  input
+    width: 100%
+    min-width: 180px
+  &:before
+    position: absolute
+    font-family: 'Font Awesome 5 Free'
+    content: "\f002"
+    color: $blue
+    top: 12px
+    left: 10px
+
+footer
+  background-color: #26303a
+  margin-top: 20px
+  & a, & *
+    color: $gray
+    &:hover
+      color: $gray
+
+.foot
+  &__top
+    padding: 30px 0
+  &__logo
+    margin-right: 50px
+  &__bottom
+    border-top: 1px solid $gray
+    padding: 20px 0
+  &__nav
+    li
+      margin-right: 24px
+      &:last-child
+        margin-right: 0
+  &__small
+    font-size: 11px
+    text-align: end
+    max-width: 280px
+
+section
+  padding: 20px 0
+.slick-initialized .slick-slide.slider__item, .slick-initialized .slick-slide.figure
+  display: flex
+.slider
+  &__wrap
+    width: 100%
+    height: 281px
+    overflow: hidden
+    .slick-track, .slick-list
+      height: 100%
+  &__item
+    display: flex
+    align-items: flex-end
+    width: 100%
+    height: 100%
+    border-radius: $radius
+    &:hover
+      text-decoration: none
+  &__title
+    width: 100%
+    padding: 24px
+    .title
+      font-size: 24px
+      color: #ffffff
+      font-weight: bold
+      margin-bottom: 0
+  &__sub__title
+    margin-top: 15px
+    font-size: 14px
+    color: #ffffff
+    font-weight: 400
+    max-width: 300px
+.sidebar
+  &__column
+    width: 100%
+    max-width: 265px
+    min-width: 265px
+    height: 100%
+    margin-left: 30px
+    &>.column
+      margin-bottom: 30px
+    .sidebar__info
+      margin-bottom: 0
+    .title
+      margin-bottom: 15px
+    .btn__next
+      align-self: flex-end
+    .figure__item
+      margin-bottom: 0
+    .border__top
+      padding-top: 15px
+      margin-top: 15px
+  &__menu
+    height: 100%
+    a
+      text-decoration: underline
+    li
+      font-size: 15px
+      position: relative
+      padding-left: 26px
+      margin-bottom: 12px
+      &:before
+        position: absolute
+        left: 0
+        top: 1px
+        font-family: 'Font Awesome 5 Free'
+      &:last-child
+        margin-bottom: 0
+  &__news__wrap
+    margin-bottom: 24px
+  &__info
+    margin-top: 40px
+    .btn__stars
+      cursor: pointer
+    .tabs__btn
+      margin-right: 20px
+      font-size: 14px
+    .tabs__wrap
+      margin-top: 20px
+    .tabs__btn__row
+      margin-bottom: 20px
+
+.tags
+  &__title
+    font-size: 16px
+    margin-bottom: 16px
+    &:before
+      font-family: 'Font Awesome 5 Free'
+      content: "\f02b"
+      color: $d-gray
+      font-size: 14px
+      margin-right: 8px
+  &__row
+    .btn__gray
+      margin-bottom: 12px
+      margin-right: 6px
+      &:last-child
+        margin-right: 0
+
+.double__wrap
+  width: 100%
+.figure
+  &__wrap+.figure__top
+    margin-top: 20px
+  &.is-active
+    .fa-play
+      color: $red
+  &__top
+    margin-bottom: 12px
+    align-items: flex-start
+    .h2
+      margin-top: -5px
+    .i__video
+      margin-right: 12px
+    .text__shares
+      margin: 0
+      .i
+        margin-bottom: 0
+  &__item
+    width: 100%
+    max-width: 205px
+    margin-bottom: 15px
+    .figure__img
+      margin-bottom: 18px
+    &:hover, &.is-active
+      .label__play
+        width: 40px
+        height: 40px
+        font-size: 24px
+        bottom: calc(50% - 20px)
+        left: calc(50% - 20px)
+        .fa-play
+          margin-left: 6px
+  &__item__row
+    position: relative
+    width: calc(50% - 10px)
+    max-width: 400px
+    border-radius: $radius
+    border: 1px solid $bg-gray
+    padding: 6px 16px 6px 6px
+    transition: $all5
+    margin-bottom: 10px
+    &:hover, &.is-active
+      background-color: rgba(1, 144, 254, 0.1)
+      .label__center
+        transform: scale(1, 1)
+    .figure__img
+      max-width: 110px
+      margin-right: 12px
+  &__item__sidebar
+    margin-bottom: 15px
+    .figure__img
+      max-width: 89px
+      margin-right: 12px
+    &:hover, &.is-active
+      .label__play
+        width: 32px
+        height: 32px
+        font-size: 18px
+        bottom: calc(50% - 16px)
+        left: calc(50% - 16px)
+        .fa-play
+          margin-left: 4px
+  &__item__circle
+    margin-right: 24px
+    margin-bottom: 30px
+    .figure__desc
+      align-items: center
+    .figure__img
+      position: relative
+      max-width: 115px
+      border-radius: 100%
+      overflow: hidden
+      margin-bottom: 12px
+      &::before
+        position: absolute
+        top: 50%
+        left: 50%
+        z-index: 2
+        display: block
+        content: ''
+        width: 0
+        height: 0
+        background: rgba(255,255,255,.2)
+        border-radius: 100%
+        -webkit-transform: translate(-50%, -50%)
+        transform: translate(-50%, -50%)
+        opacity: 0
+    &:hover
+      .figure__img::before
+        -webkit-animation: circle .75s
+        animation: circle .75s
+  &__item__full
+    width: 100%
+    padding: 6px 20px
+    transition: $all5
+    align-items: center
+    border-radius: $radius
+    margin-bottom: 10px
+    .figure__desc
+      width: 100%
+    .figure__count
+      align-self: center
+    .figure__img
+      transition: $all5
+      max-width: 60px
+      img
+        transition: $all5
+    &:hover, &.is-active
+      transform: scale(1.08, 1.08)
+      background-color: #e6f4ff
+      z-index: 1
+      .figure__timer
+        transform: scale(0, 1)
+        margin: 0
+      .figure__title
+        a
+          color: $blue
+      .figure__img
+        margin-right: 20px
+        img
+          transform: scale(0, 0)
+      .label__play
+        transform: scale(1, 1)
+  &__item__big
+    width: 100%
+    max-width: 350px
+    margin: 0 20px 20px 0
+    .figure__img
+      margin-bottom: 12px
+      &>img
+        transition: $all5
+        -webkit-filter: grayscale(0) blur(0)
+        filter: grayscale(0) blur(0)
+    .i__eye
+      width: 100%
+      justify-content: flex-end
+      margin-right: 12px
+    &:hover
+      .label__link
+        transform: scale(1, 1)
+      .figure__img>img
+        -webkit-filter: grayscale(100%) blur(3px)
+        filter: grayscale(100%) blur(3px)
+  &__number
+    color: $gray
+    margin-right: 20px
+  &__timer
+    color: $gray
+    margin: 0 36px
+    transition: $all5
+  &__img
+    overflow: hidden
+    border-radius: $radius
+    width: 100%
+    position: relative
+    img
+      width: 100%
+      height: auto
+  &__title
+    font-weight: bold
+    margin-bottom: 6px
+    a
+      transition: $all5
+  &__text
+    color: $d-gray
+    font-size: 14px
+    font-weight: 400
+  &__count
+    font-size: 14px
+    color: $gray
+    font-weight: 400
+    align-self: flex-end
+    i
+      margin-right: 4px
+  &__bottom
+    p
+      color: $gray
+      font-size: 14px
+      font-weight: 400
+  &__item__gradi
+    position: relative
+    margin-bottom: 10px
+    .figure__gradient
+      opacity: 0.7
+      background: linear-gradient(to top, rgb(143, 55, 250), rgb(159, 59, 242), rgb(175, 63, 235), rgb(192, 68, 227), rgb(208, 72, 220), rgb(224, 76, 212), rgb(189, 88, 214), rgb(154, 99, 215), rgb(119, 111, 217), rgb(83, 122, 219), rgb(48, 134, 220), rgb(13, 145, 222))
+    .figure__img
+      width: 100%
+    .figure__title
+      position: absolute
+      left: 40%
+      height: 100%
+      a
+        z-index: 2
+        color: #ffffff
+        &:hover
+          text-decoration: none
+  &__gradient
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    z-index: 1
+  &__genres
+    position: relative
+    overflow: hidden
+    border-radius: $radius
+    margin-bottom: 15px
+    .figure__img
+      max-width: 192px
+      height: 100px
+    .figure__gradient
+      background-color: rgba(0, 0, 0, 0.3)
+    .figure__title
+      position: absolute
+      z-index: 2
+      top: 0
+      bottom: 0
+      left: 0
+      right: 0
+      margin-bottom: 0
+      a
+        padding: 0 15px
+        width: 100%
+        height: 100%
+        display: flex
+        justify-content: center
+        align-items: center
+        color: #ffffff
+        &:hover
+          text-decoration: none
+
+.shadow
+  text-shadow: -2px -1px 1px #000
+.img__filter
+  position: relative
+  &:after
+    content: ""
+    position: absolute
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    mix-blend-mode: color
+    z-index: 1
+  &.three:after
+    background: linear-gradient(to top, rgb(143, 55, 250), rgb(159, 59, 242), rgb(175, 63, 235), rgb(192, 68, 227), rgb(208, 72, 220), rgb(224, 76, 212), rgb(189, 88, 214), rgb(154, 99, 215), rgb(119, 111, 217), rgb(83, 122, 219), rgb(48, 134, 220), rgb(13, 145, 222))
+  &.two:after
+    background: linear-gradient(to top, rgb(92, 34, 240), rgb(106, 37, 239), rgb(119, 41, 238), rgb(133, 44, 237), rgb(147, 48, 236), rgb(160, 51, 235), rgb(174, 55, 233), rgb(187, 58, 232), rgb(201, 62, 231), rgb(215, 65, 230), rgb(228, 69, 229), rgb(242, 72, 228))
+
+@-webkit-keyframes circle
+  0%
+    opacity: 1
+  40%
+    opacity: 1
+  100%
+    width: 200%
+    height: 200%
+    opacity: 0
+
+.slick
+  &__adaptiv
+    .figure__item
+      max-width: 100%
+      margin-right: 20px
+  &__btn
+    display: flex!important
+    cursor: pointer
+    height: calc(100% - 88px)
+    width: 36px
+    background-color: $blue
+    position: absolute
+    top: 0
+    z-index: 100
+    opacity: 0.6
+    transition: $all5
+    &:hover
+      opacity: 1
+    &.slick-disabled
+      display: none!important
+    &.right
+      right: 0
+      border-radius: $radius 0 0 $radius
+    &.left
+      left: 0
+      border-radius: 0 $radius $radius 0
+    span
+      color: #ffffff
+
+.border__top
+  border-top: 1px solid $bg-gray
+  padding-top: 30px
+.padding__top
+  padding-top: 34px
+.label
+  position: absolute
+  background-color: #fff
+  border-radius: 100%
+  width: 26px
+  height: 26px
+  font-size: 13px
+  transition: $all5
+  .fa-play
+    color: $blue
+    margin-left: 2px
+  .fa-fire
+    color: $red
+    font-size: 16px
+  &__img
+    padding: 0 12px
+    position: absolute
+    bottom: 12px
+    img
+      width: 62px
+      margin-right: 12px
+    span
+      color: #ffffff
+      margin-right: 12px
+      &:last-child
+        margin-top: 6px
+        font-size: 14px
+        font-weight: normal
+  &__link
+    background-color: #fff
+    position: absolute
+    padding: 8px 28px
+    top: calc(50% - 15px)
+    left: calc(50% - 60px)
+    transition: $all5
+    transform: scale(0, 0)
+    border-radius: $radius
+  &__orange
+    background-color: $yellow
+    padding: 8px
+    line-height: 1
+    color: #ffffff
+    font-weight: normal
+    position: absolute
+    top: 20px
+    left: 20px
+    border-radius: $radius
+  &__bot
+    bottom: 12px
+    left: 12px
+    &.small
+      left: 6px
+      bottom: 6px
+  &__top
+    top: 12px
+    right: 12px
+  &__center
+    width: 32px
+    height: 32px
+    font-size: 18px
+    bottom: calc(50% - 16px)
+    left: calc(50% - 16px)
+    transform: scale(0, 0)
+    .fa-play
+      margin-left: 4px
+  &__play
+    cursor: pointer
+  &.small
+    height: 22px
+    width: 22px
+    font-size: 11px
+.after__top
+  position: relative
+  padding-right: 36px
+  .after
+    position: absolute
+    top: -5px
+    right: 0
+    color: #ffffff
+    background-color: $yellow
+    font-size: 12px
+    border-radius: $radius
+    line-height: 1
+    padding: 2px 4px
+
+.frame
+  &__modal
+    z-index: 999
+    position: fixed
+    top: calc(95vh - 300px)
+    left: calc(95vw - 500px)
+    display: none
+    background-color: #fff
+    padding: 20px 20px 0 20px
+    box-shadow: 0px 0px 5px 3px $d-gray
+    border-radius: $radius
+  &__close
+    font-size: 14px
+    line-height: 1
+    font-weight: normal
+    color: $blue
+    border-radius: $radius
+    border: 1px solid $blue
+    padding: 6px
+    cursor: pointer
+  &__info
+    padding: 12px 0
+    .gray
+      color: $d-gray
+      font-size: 11px
+      font-weight: normal
+      margin-bottom: 8px
+  &__name
+    font-size: 14px
+  &__next__clip
+    display: none
+    &.is-active
+      display: flex
+
+.main__wrap
+  width: 100%
+  max-width: calc(100% - 295px)
+  .figure__row
+    margin-bottom: 34px
+.single
+  &__info
+    width: 100%
+  &__img
+    width: 100%
+    max-width: 222px
+    margin-right: 36px
+    border-radius: 100%
+    overflow: hidden
+    img
+      height: auto
+      width: 100%
+  &__name
+    margin-bottom: 22px
+    .h1
+      font-size: 24px
+      font-weight: bold
+      margin-bottom: 0
+      margin-right: 32px
+    .sub__name
+      color: $d-gray
+      font-size: 14px
+      font-weight: 400
+      align-self: flex-end
+      margin-bottom: 3px
+  &__button
+    .btn__border:first-child
+      margin-right: 10px
+    .btn__shares
+      transition: $all3
+      &.is-active
+        border: 1px solid $red
+        color: $red
+  &__shares, &__stars
+    margin-top: 15px
+  &__info__list
+    margin-top: 32px
+    width: 100%
+    li
+      width: 100%
+      margin-bottom: 10px
+      li
+        margin-bottom: 0
+        margin-right: 5px
+        &:last-child
+          margin-right: 0
+        a
+          text-decoration: underline
+    a
+      white-space: nowrap
+    *
+      color: $d-gray
+      font-size: 14px
+      font-weight: normal
+    .black
+      color: #000
+      font-weight: 600
+      min-width: 125px
+      margin-right: 20px
+
+.tabs
+  &__wrap
+    margin-top: 40px
+  &__btn__row
+    width: 100%
+    border-bottom: 1px solid $bg-gray
+    margin-bottom: 50px
+  &__btn
+    margin-right: 60px
+    padding-bottom: 8px
+    cursor: pointer
+    height: 100%
+    &.is-active
+      position: relative
+      &:before
+        content: ''
+        width: 100%
+        height: 2px
+        background: $blue
+        position: absolute
+        bottom: -1px
+  &__block
+    //display: none
+    position: fixed
+    right: 100vw
+    &.is-active
+      //display: block
+      position: relative
+      right: auto
+
+.text
+  &__wrap
+    .h2
+      margin-bottom: 36px
+    img
+      width: 100%
+      height: auto
+    p
+      margin-bottom: 20px
+      font-size: 14px
+      line-height: 1.5
+      font-weight: normal
+      color: $d-gray
+    a
+      color: $blue
+      font-weight: 600
+    a[data-fancybox], iframe
+      align-self: center
+      margin: 45px 0
+    p+a[data-fancybox], p+iframe
+      margin-top: 25px
+    a.text__quote__img
+      margin: 0
+    blockquote
+      padding-left: 30px
+      margin-left: 30px
+      border-left: 2px solid $blue
+      font-style: italic
+      font-weight: normal
+      font-size: 14px
+      color: $gray
+    .text__quote
+      margin: 30px 0 30px 30px
+      blockquote
+        margin-bottom: 0
+        padding-left: 0
+        margin-left: 0
+        border-left: none
+      &__title
+        font-size: 16px
+        font-weight: bold
+        margin-bottom: 15px
+      &__img
+        min-width: 215px
+        height: 100%
+        position: relative
+      &__desc
+        position: relative
+        padding-left: 30px
+        margin-left: 30px
+        border-left: 2px solid $blue
+  &__estimate
+    font-size: 14px
+    color: $d-gray
+    font-weight: normal
+    padding-top: 40px
+    border-top: 1px solid $bg-gray
+    div
+      margin-bottom: 15px
+    span
+      margin-right: 20px
+  &__shares
+    margin: 30px 0 50px
+    .gray
+      font-size: 14px
+      font-weight: 400
+      color: $gray
+      margin-left: 30px
+      align-self: center
+  &__hidden
+    color: $d-gray
+    font-weight: normal
+    font-size: 14px
+    position: relative
+    overflow: hidden
+    max-height: 166px
+    a
+      color: $blue
+      &:hover
+        color: $blue
+  &__modal__btn
+    position: absolute
+    bottom: 2px
+    right: 0
+    background: linear-gradient(to right, rgba( 255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 1))
+    padding: 0 4px 0 20px
+  &__modal
+    color: $d-gray
+    font-size: 14px
+    line-height: 1.5
+    font-weight: normal
+    max-width: 800px
+    display: inline-block!important
+    &.fancybox-content
+      padding: 40px 20px 20px
+
+.gallery
+  &__wrap
+    margin-bottom: 50px
+    position: relative
+    overflow: hidden
+    padding-right: 45px
+  &__slick
+    position: relative
+    .slick__btn
+      height: 100%
+      background-color: rgba(0, 0, 0, 0.8)
+      &.right
+        color: #fff
+        font-weight: normal
+        font-style: italic
+        width: 45px
+        right: -45px
+        background-color: #000
+        opacity: 1
+  &__item
+    max-width: 180px
+    width: 100%
+    margin-right: 20px
+    img
+      border-radius: $radius
+      width: 100%
+      height: auto
+
+.comment
+  &__tabs
+    margin-top: 40px
+    .h2
+      margin-bottom: 10px
+      margin-right: 20px
+    .i__comment
+      align-self: flex-end
+  &__form
+    margin: 0 0 10px 30px
+    textarea
+      border: 1px solid $bg-gray
+      border-radius: $radius
+      background-color: #fff
+      color: $gray
+      padding: 15px
+      margin-bottom: 20px
+      resize: none
+      height: auto
+  &__submit
+    align-self: flex-end
+    input
+      border-radius: $radius
+      background-color: $blue
+      color: #ffffff
+      cursor: pointer
+      padding: 10px
+      height: auto
+  &__count__text
+    font-size: 14px
+    color: $gray
+    margin-right: 10px
+    &.full
+      color: $red
+  &__item
+    margin-bottom: 20px
+    &>ul
+      margin-left: 60px
+      margin-top: 20px
+  &__autor
+    justify-content: flex-start
+    margin-bottom: 20px
+  &__img
+    margin-right: 15px
+    max-width: 52px
+    img
+      border-radius: 100%
+      width: 100%
+      height: auto
+  &__date
+    font-size: 14px
+    color: $gray
+    font-weight: normal
+    margin-top: 6px
+  &__text
+    font-size: 14px
+    font-weight: normal
+    color: $d-gray
+  &__bottom
+    align-self: flex-end
+    .i
+      margin-left: 15px
+.full__ajax__btn
+  margin: 20px 0
+  &.full
+    .btn__blue
+      width: 100%
+  .btn__blue
+    padding: 8px 34px
+  .btn__next
+    &:after
+      content: "\f107"
+    &:hover:after
+      right: -5px
+.breadcrumb
+  &__wrap
+    padding: 0
+  &__item
+    a
+      font-size: 14px
+      color: $gray
+      font-weight: normal
+      &:hover
+        color: $gray
+        text-decoration: none
+    &+.breadcrumb__item
+      a
+        margin-left: 5px
+        padding-left: 10px
+        position: relative
+        &:before
+          position: relative
+          font-size: 12px
+          content: "\f101"
+          font-family: "Font Awesome 5 Free"
+          left: -5px
+
+.scroll
+  &__sticky
+    position: fixed
+    z-index: 100
+  &__stop
+    position: relative
+    z-index: 100
+
+.pagination__wrap
+  justify-content: flex-end
+  ul
+    display: flex
+    align-items: center
+  li
+    margin-right: 15px
+    &:last-child
+      margin-right: 0
+  a
+    color: $gray
+  .fas
+    color: #000
+    &.fa-angle-left
+      margin-right: 15px
+    &.fa-angle-right
+      margin-left: 15px
+  span:not(.fas)
+    border-radius: $radius
+    border: 1px solid $gray
+    color: $blue
+    width: 22px
+    height: 22px
+    display: flex
+    align-items: center
+    justify-content: center
+  .disabled
+    opacity: 0.5
+    pointer-events: none
+
+.filter
+  &__wrap
+    margin-bottom: 40px
+  &__top
+    align-items: center
+    &>span
+      margin: 0 15px 15px 0px
+  &__item
+    margin: 0 15px 15px 0px
+  &__btn
+    border-radius: $radius
+    border: 1px solid $bg-gray
+    color: $gray
+    font-size: 14px
+    font-weight: normal
+    padding: 8px 16px
+    cursor: pointer
+    transition: $all5
+    &:hover, &.is-active
+      color: #ffffff
+      background-color: $blue
+      border: 1px solid $blue
+  &__result__count
+    display: none
+    font-size: 14px
+    color: $blue
+    font-weight: bold
+    padding: 8px 16px
+    border-radius: $radius
+    background-color: $hover
+    line-height: 1
+    margin-bottom: 15px
+    white-space: nowrap
+  &__result__item
+    margin: 0 0 15px 15px
+    border-radius: $radius
+    border: 1px solid $bg-gray
+    color: $blue
+    font-size: 14px
+    padding: 8px 16px
+    i
+      cursor: pointer
+      margin-left: 5px
+      position: relative
+      top: 1px
+  &__submit
+    cursor: pointer
+    color: #fff
+    font-size: 14px
+    padding: 8px 10px
+    background-color: $blue
+    border-radius: $radius
+    &:before
+      margin-right: 6px
+      font-family: 'Font Awesome 5 Free'
+      content: "\f002"
+      color: #fff
+
+.alphabet__option
+  padding: 10px 0 10px 10px
+  top: 32px
+  display: none
+  right: 0
+  z-index: 2
+  position: absolute
+  background: #fff
+  width: calc(100vw - 30px)
+  max-width: 736px
+  border: 1px solid $bg-gray
+  border-radius: $radius
+  color: $gray
+  .title
+    color: #000
+    font-weight: bold
+    font-size: 14px
+    margin-top: 15px
+  .alphabet__checkbox
+    position: relative
+    width: 30px
+    height: 30px
+    margin: 15px 15px 0 0
+    input, .checkmark
+      cursor: pointer
+      position: absolute
+      top: 0
+      left: 0
+      width: 30px!important
+      height: 30px
+    input
+      z-index: 2
+      opacity: 0
+    .checkmark
+      background: #ffffff
+      border-radius: $radius
+      border: 1px solid $gray
+      text-decoration: underline
+      font-weight: bold
+    input:checked ~ .checkmark
+      border: 1px solid $blue
+      color: $blue
+.ajax__container
+  justify-content: space-around
+.clip
+  &__all__btn
+    background-color: $blue
+    border-radius: $radius
+    padding: 8px 30px
+    cursor: pointer
+    span
+      font-size: 14px
+      color: #ffffff
+  &__play
+    width: 30px
+    height: 30px
+    background-color: #fff
+    border-radius: 100%
+    margin-left: 10px
+    .fas
+      color: $blue
+  &__wrap
+    width: 100%
+    max-width: calc(100% - 295px)
+  &__frame__wrap
+    overflow: hidden
+    position: relative
+    width: 100%
+    height: 458px
+    margin: 20px 0
+    iframe
+      width: 100%
+      height: 100%
+  &__bottom
+    &__item
+      margin-bottom: 15px
+      margin-right: 15px
+      &:last-child
+        margin-right: 0
+    .i__eye
+      font-size: 16px
+      font-weight: normal
+    .checkbox__wrap
+      font-size: 14px
+      font-weight: 400
+    .i__like
+      margin-right: 10px
+    .checkbox .checkmark:after
+      top: 2px
+  &__nav
+    .fas
+      position: relative
+      transition: $all5
+    &__prev
+      height: 40px
+      width: 40px
+      border-radius: $radius
+      border: 1px solid $blue
+      color: $blue
+      margin-right: 10px
+      .fas
+        right: 0
+      &:hover
+        color: $blue
+        text-decoration: none
+        .fas
+          right: 3px
+    &__next
+      color: #fff
+      height: 40px
+      border-radius: $radius
+      background-color: $blue
+      padding: 0 20px
+      font-size: 14px
+      &:hover
+        color: #fff
+        text-decoration: none
+        .fas
+          left: 3px
+      .fas
+        left: 0
+        margin-left: 10px
+
+@import "media"
+// Always at the end
+
+

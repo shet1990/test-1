@@ -1,0 +1,239 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+@media only screen and (max-width: 1076px)
+  .alphabet__option
+    right: auto
+    left: 0
+    max-width: calc(100vw - 325px)
+
+@media only screen and (max-width: 992px)
+
+  .head__desc
+    display: none
+  .figure__item__row
+    max-width: 100%
+    width: 100%
+  .figure__timer
+    margin: 0 10px
+  .single__img
+    max-width: 160px
+    min-width: 120px
+  .gallery
+    &__item
+      max-width: 188px
+    &__count
+      width: 10%
+  .clip__frame__wrap
+    height: 375px
+
+@media only screen and (max-width: 939px)
+  .alphabet__option
+    left: -118px
+
+@media only screen and (max-width: 822px)
+  .alphabet__option
+    left: -218px
+
+@media only screen and (max-width: 767px)
+
+  section
+    padding: 10px 0
+  .my__hamburger
+    display: block
+    order: 2
+  .head__logo
+    order: 1
+    margin-right: 0
+  header
+    .spacer
+      display: none
+  .head__top
+    height: auto
+    flex-wrap: wrap
+    padding: 12px 0
+  .head__search
+    margin-top: 12px
+    order: 3
+    flex: 1 1 100%
+  .submit__search
+    width: 100%
+    justify-content: center
+    border-radius: 0 $radius $radius 0
+  .head__nav
+    display: none
+    height: auto
+    &>ul
+      flex-direction: column
+      align-items: center
+      &>li
+        width: 100%
+        text-align: center
+        margin-bottom: 0
+        padding: 10px 0
+        border-top: 1px solid $gray
+        &.menu-item-has-children
+    .sub-menu
+      position: relative
+      top: auto
+      left: auto
+  .foot__top, .clip__head
+    .container
+      flex-direction: column
+  .foot__nav
+    margin-top: 12px
+    ul
+      flex-direction: column
+      li
+        margin-right: 0
+        margin-top: 12px
+  .slider
+    &__title
+      font-size: 18px
+    &__section
+      .container
+        flex-direction: column
+  .sidebar
+    &__figure
+      align-items: flex-start
+    &__column
+      margin-left: 0
+      max-width: 100%
+      margin-top: 24px
+    &__menu
+      flex-direction: row
+      flex-wrap: wrap
+      li
+        width: 50%
+  .double__row
+    .container
+      flex-direction: column
+  .figure
+    &__item__big
+      margin: 0 0 20px 0
+    &__item
+      max-width: calc(50% - 10px)
+    &__item__full
+      padding: 6px 0
+      .figure__img
+        margin-right: 20px
+      .figure__number, .figure__count, .figure__timer
+        display: none
+    &__item__circle
+      margin: 0 12px 20px
+  .main__wrap, .clip__wrap
+    max-width: 100%
+  .alphabet__option
+    left: 0
+    max-width: calc(100vw - 30px)
+  .clip__frame__wrap
+    height: 414px
+
+@media only screen and (max-width: 660px)
+
+  .figure__wrap.flex__wrap
+    justify-content: space-around
+  .clip__frame__wrap
+    height: 354px
+  .tabs__btn
+    margin-right: 25px
+    font-size: 14px
+    &:last-child
+      margin-right: 0
+
+@media only screen and (max-width: 644px)
+  .alphabet__option
+    left: -118px
+
+@media only screen and (max-width: 527px)
+  .alphabet__option
+    left: -218px
+
+@media only screen and (max-width: 520px)
+
+  .gallery__item
+    max-width: 425px
+  .head__search
+    flex-wrap: wrap
+    height: auto
+  .submit__search
+    border-radius: 0 0 $radius $radius
+  .input__search, .select__wrap.select__search
+    flex: 1 1 50%
+    min-width: auto
+  .input__search input
+    min-width: auto
+    padding-right: 0
+  .figure
+    &__item
+      max-width: 100%
+    &__item__row
+      .figure__count
+        display: none
+  .single
+    &__head
+      flex-direction: column
+      align-items: center
+    &__img
+      max-width: 220px
+      margin-right: 0
+      margin-bottom: 32px
+  .text__wrap
+    blockquote
+      padding-left: 10px
+      margin-left: 10px
+    .text__quote
+      margin-left: 0
+      flex-direction: column
+      blockquote
+        padding-left: 0
+        margin-left: 0
+        border-left: 0
+      &__desc
+        padding-left: 0
+        margin-left: 0
+        border-left: none
+        margin-top: 15px
+        padding-top: 15px
+        border-top: 2px solid $blue
+  .sidebar__menu
+    li
+      width: 100%
+  .clip__frame__wrap
+    height: 276px
+
+@media only screen and (max-width: 460px)
+
+  .clip__frame__wrap
+    height: 242px
+
+@media only screen and (max-width: 427px)
+  .alphabet__option
+    left: 0px
+  .clip__frame__wrap
+    height: 224px
+
+@media only screen and (max-width: 359px)
+  .alphabet__option
+    left: -118px
+  .clip__frame__wrap
+    height: 185px
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px)
+  /**/
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px)
+  /**/
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px)
+  /**/
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px)
+  /**/
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px)
+  /**/
+
